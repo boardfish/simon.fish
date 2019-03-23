@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Row, Container, Col } from "reactstrap";
 import ProfileImage from "../images/profile.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Header extends Component {
   render() {
