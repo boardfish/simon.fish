@@ -8,11 +8,12 @@ class Header extends Component {
       <Row>
         <Container style={{ maxHeight: "100vh" }} className="border">
           <Row>
-            <Col className="d-flex justify-content-center align-items-center">
+            <Col className="d-flex flex-column justify-content-center align-items-center">
               <h1 className="display-3">Simon Fish</h1>
+              <p className="lead">Student. Software engineer. Explorer.</p>
             </Col>
             <Col>
-              <img className="w-100" src={ProfileImage} />
+              <img className="w-100 p-3 rounded" src={ProfileImage} />
             </Col>
           </Row>
         </Container>
