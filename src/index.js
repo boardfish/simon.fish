@@ -10,12 +10,12 @@ import {
   faLinkedin,
   faTwitter
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 
 // Bootstrap and styling imports
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // FontAwesome icon library intialisation
-library.add(faGithub, faEnvelope, faLinkedin, faFacebook, faTwitter);
+library.add(faGithub, faEnvelope, faFile, faLinkedin, faFacebook, faTwitter);
 
 ReactDOM.render(<App />, document.getElementById("root"));
