@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Row, Container, Col, Card, CardBody } from "reactstrap";
+import { Row, Col, Card, CardBody } from "reactstrap";
 import ProfileImage from "../images/profile.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SocialLink from "./SocialLink";
 
 class Header extends Component {
@@ -49,7 +48,11 @@ class Header extends Component {
           </Card>
         </Col>
         <Col>
-          <img className="w-100 p-3 rounded" src={ProfileImage} />
+          <img
+            className="w-100 p-3 rounded"
+            src={ProfileImage}
+            alt="Simon in a GitHub hoodie and Ausdom M05 headphones."
+          />
         </Col>
       </Row>
     );
