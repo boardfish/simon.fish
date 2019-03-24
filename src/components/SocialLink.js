@@ -9,7 +9,8 @@ export default props => {
       rel="noopener noreferrer"
       className={`btn btn-${props.colorClass}`}
     >
-      <FontAwesomeIcon icon={props.icon} /> {props.text}
+      <FontAwesomeIcon icon={props.icon} />{" "}
+      <span className="d-none d-md-inline">{props.text}</span>
     </a>
   );
 };

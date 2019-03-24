@@ -5,6 +5,7 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import "./App.css";
 import About from "./components/About";
 import ContactMe from "./components/ContactMe";
+import PortfolioItem from "./components/PortfolioItem";
 
 class App extends Component {
   render() {

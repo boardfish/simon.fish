@@ -8,12 +8,16 @@ class Header extends Component {
   render() {
     return (
       <Row>
-        <Col className="d-flex flex-column justify-content-center align-items-center">
+        <Col
+          xs="12"
+          md="6"
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
           <Card className="text-center">
             <CardBody>
               <img
                 className="w-100 p-3 rounded"
-                src={Logo}
+                src={ProfileImage}
                 alt="Pixelated fish logo"
               />
               <h1 className="display-3">Simon Fish</h1>
@@ -22,10 +26,14 @@ class Header extends Component {
             </CardBody>
           </Card>
         </Col>
-        <Col>
+        <Col
+          xs="12"
+          md="6"
+          className="d-flex justify-content-center align-items-center"
+        >
           <img
             className="w-100 p-3 rounded"
-            src={ProfileImage}
+            src={Logo}
             alt="Simon in a GitHub hoodie and Ausdom M05 headphones."
           />
         </Col>
