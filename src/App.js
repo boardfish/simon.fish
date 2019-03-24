@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import TestimonialsSection from "./components/TestimonialsSection";
 import "./App.css";
 import About from "./components/About";
+import ContactMe from "./components/ContactMe";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
           <Header />
           <About />
           <TestimonialsSection />
+          <ContactMe />
         </Container>
       </Container>
     );

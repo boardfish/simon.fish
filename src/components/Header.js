@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Row, Col, Card, CardBody } from "reactstrap";
 import ProfileImage from "../images/profile.jpg";
 import SocialLink from "./SocialLink";
+import SocialLinkGroup from "./SocialLinkGroup";
 
 class Header extends Component {
   render() {
@@ -12,38 +13,7 @@ class Header extends Component {
             <CardBody>
               <h1 className="display-3">Simon Fish</h1>
               <p className="lead">Student. Software engineer. Explorer.</p>
-              <div className="btn-group">
-                <SocialLink
-                  link="https://github.com/boardfish"
-                  colorClass="primary"
-                  icon={["fab", "github"]}
-                  text="GitHub"
-                />
-                <SocialLink
-                  link="mailto:si@mon.fish"
-                  colorClass="primary"
-                  icon="envelope"
-                  text="si@mon.fish"
-                />
-                <SocialLink
-                  link="https://linkedin.com/in/boardfish"
-                  colorClass="primary"
-                  icon={["fab", "linkedin"]}
-                  text="LinkedIn"
-                />
-                <SocialLink
-                  link="https://twitter.com/boardfish"
-                  colorClass="primary"
-                  icon={["fab", "twitter"]}
-                  text="@boardfish_"
-                />
-                <SocialLink
-                  link="https://facebook.com/simonfish84"
-                  colorClass="primary"
-                  icon={["fab", "facebook"]}
-                  text="Facebook"
-                />
-              </div>
+              <SocialLinkGroup />
             </CardBody>
           </Card>
         </Col>
