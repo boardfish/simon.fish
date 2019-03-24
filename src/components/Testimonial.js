@@ -12,6 +12,7 @@ export default props => {
       <a
         class="btn btn-lg btn-color btn-outline-primary mt-3"
         target="_blank"
+        rel="noopener noreferrer"
         href={props.link}
       >
         <FontAwesomeIcon icon={props.icon} /> Full reference
