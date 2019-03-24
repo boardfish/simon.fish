@@ -7,7 +7,7 @@ export default () => {
       <h2>Testimonials</h2>
       <Testimonial
         author="Andy Sykes"
-        role="formerly of Pera Technology"
+        authorRole="formerly of Pera Technology"
         icon="file"
         link="docs/PeraTechnologyReference.pdf"
       >
@@ -22,7 +22,7 @@ export default () => {
       </Testimonial>
       <Testimonial
         author="Pauline Narvas"
-        role="Code First Girls course ambassador"
+        authorRole="Code First Girls course ambassador"
         icon={["fab", "linkedin"]}
         link="https://www.linkedin.com/in/boardfish/"
       >

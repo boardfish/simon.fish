@@ -7,7 +7,7 @@ export default props => {
       {props.children}
       <footer className="blockquote-footer">
         {props.author}
-        {props.role ? `, ${props.role}` : ""}
+        {props.authorRole ? `, ${props.authorRole}` : ""}
       </footer>
       <a
         class="btn btn-lg btn-color btn-outline-primary mt-3"
