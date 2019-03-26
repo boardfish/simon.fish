@@ -6,6 +6,7 @@ import "./App.css";
 import About from "./components/About";
 import ContactMe from "./components/ContactMe";
 import PortfolioItem from "./components/PortfolioItem";
+import Portfolio from "./_data/portfolio";
 
 class App extends Component {
   state = { selectedCard: null };
@@ -16,6 +17,26 @@ class App extends Component {
     } else {
       this.setState({ selectedCard: cardName });
     }
+  }
+
+  renderPortfolio() {
+    return Portfolio.map(portfolioItem => {
+      return (
+        <PortfolioItem
+          {...portfolioItem}
+          active={this.state.selectedCard === portfolioItem.project_name}
+          hidden={
+            ![null, portfolioItem.project_name].includes(
+              this.state.selectedCard
+            )
+          }
+          onClick={() => {
+            this.handleClick(portfolioItem.project_name);
+          }}
+          key={portfolioItem.project_name}
+        />
+      );
+    });
   }
 
   render() {
@@ -30,7 +51,9 @@ class App extends Component {
               flexWrap: "nowrap",
               overflowX: this.state.selectedCard === null ? "auto" : "visible"
             }}
-          />
+          >
+            {this.renderPortfolio()}
+          </div>
           <TestimonialsSection />
           <ContactMe />
         </Container>

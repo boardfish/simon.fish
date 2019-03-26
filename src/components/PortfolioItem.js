@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import posed, { PoseGroup } from "react-pose";
 import styled from "styled-components";
 import { tween } from "popmotion";
+import ReactMarkdown from "react-markdown";
 
 const Card = styled(
   posed.div({
@@ -26,6 +27,18 @@ const Card = styled(
 `;
 
 class PortfolioItem extends Component {
+  imageDiv = () => {
+    if (!this.props.image) {
+      return null;
+    } else {
+      return (
+        <div className={this.props.active ? "col" : "col-12"}>
+          <img width="100%" src={this.props.image} alt="Card image cap" />
+        </div>
+      );
+    }
+  };
+
   render() {
     return (
       <Card
@@ -45,18 +58,20 @@ class PortfolioItem extends Component {
         <div className="card-body row">
           <div className="card-title col-12">
             <h4>
-              <FontAwesomeIcon icon={this.props.icon} /> {this.props.title}
+              <FontAwesomeIcon icon={this.props.icon} /> {this.props.name}
               <br />
               <small className="text-muted">{this.props.location}</small>
             </h4>
           </div>
+          {this.imageDiv()}
           <div className={this.props.active ? "col" : "col-12"}>
-            <img width="100%" src={this.props.image} alt="Card image cap" />
-          </div>
-          <div className={this.props.active ? "col" : "col-12"}>
-            <div className="card-text">
-              {this.props.active ? this.props.description : this.props.summary}
-            </div>
+            <ReactMarkdown
+              escapeHtml={false}
+              source={
+                this.props.active ? this.props.description : this.props.summary
+              }
+              className="card-text"
+            />
           </div>
         </div>
       </Card>
