@@ -1,6 +1,6 @@
 [
   {
-      "name": "GreatUniHack",
+      "name": "Great<wbr>Uni<wbr>Hack",
       "location": "Manchester Metropolitan University",
       "image": "/images/portfolio/GreatUniHack-Winners.jpg",
       "icon": "gem",
@@ -68,7 +68,7 @@
       "description": "On our first full day in California, [Matt](https://github.com/mattburman), [Borja](https://github.com/p3rzival) and I worked together to develop a more malleable team section for the HackSheffield society's website. As the founder of HackSheffield and a strong supporter of Git as a universal tool, Matt had the idea of using GitHub as a content management system for quite some time. I thought that GitHub's organisation support, and teams within those, had strong potential but weren't very front-facing to consumers. Inspired by 'meet the team' sections in some startups' sites, we decided to work on using GitHub to retrieve HackSheffield committee members' profiles in one smooth query with GraphQL, making the information more easy to maintain using GitHub itself. It also has the added benefit of decentralising the site's data to those who really should have control over it - the profiles visible there reflect the latest data they have made available on GitHub. We brought this live at [mygit.club](http://mygit.club). I have since made my first pull request to [hack.sheffield.ac.uk](https://hack.sheffield.ac.uk) with the intent of porting it across and learned lots about Node.js in the process."
     },
   {
-      "name": "HackSheffield 3.0",
+      "name": "Hack<wbr>Sheffield 3.0",
       "location": "University of Sheffield",
       "image": "/images/portfolio/HackSheffield.jpg",
       "icon": "exclamation-circle",
@@ -116,7 +116,7 @@
       "description": "Deciding on going solo for once on a personal quest to explore some new technologies, I chose to work with things I personally enjoyed. Taking <i>Super Mario Odyssey</i>, Amazon Alexa, Discord, and the web, I sought to build a means of locating the game's many Power Moons. <i>Odyssey</i> contains over 800 Power Moons hidden across the game's many sprawling Kingdoms, with some only available after the game's main story sequence is over. Each is named as a hint to their location, such as 'Under The Waterfall Basin' or 'Caught Hopping in the Cascade Kingdom'. These made for a great library of data to collect from across the web and serve as an API, which served as my starting point. After establishing this, I went on to build an Alexa skill with handy cards in the app and filtering by the name of each Kingdom. This only took about three hours, but needed a lot of polish and refinement - especially the filter function, which came in a fair while later.<br>The Discord bot accessed the database in the same manner as the API and Alexa skill - I intend to explore the potential of chatbots on Discord further. A website hosted with Flask was the icing on the cake. I went on to win another prize from Amazon Web Services for my use of Alexa Skills Kit, motivating me to submit the skill to the Alexa Skills Store."
     },
   {
-      "name": "HackTheBurgh 2018",
+      "name": "Hack<wbr>The<wbr>Burgh 2018",
       "location": "University of Edinburgh",
       "icon": "volleyball-ball",
       "project_name": "ShefBall",

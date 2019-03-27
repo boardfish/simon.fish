@@ -45,7 +45,8 @@ class PortfolioItem extends Component {
         <div className="card-title col-12">
           <h4 className="text-center">
             <FontAwesomeIcon icon={this.props.icon} />
-            <br /> {this.props.name}
+            <br />{" "}
+            <span dangerouslySetInnerHTML={{ __html: this.props.name }} />
             <br />
             <small className="text-muted">
               {`${this.props.location}, ${this.props.date}`}
@@ -61,7 +62,8 @@ class PortfolioItem extends Component {
       return (
         <div className="card-title col-12">
           <h4>
-            <FontAwesomeIcon icon={this.props.icon} /> {this.props.name}
+            <FontAwesomeIcon icon={this.props.icon} />{" "}
+            <span dangerouslySetInnerHTML={{ __html: this.props.name }} />
             <br />
             <small className="text-muted">{this.props.location}</small>
           </h4>
@@ -84,7 +86,9 @@ class PortfolioItem extends Component {
               }
             : { minWidth: 250 }
         }
-        className={this.props.active ? "bg-dark text-light" : "bg-light text-primary"}
+        className={
+          this.props.active ? "bg-dark text-light" : "bg-light text-primary"
+        }
       >
         <div className="card-body row">
           {this.renderTitle()}
