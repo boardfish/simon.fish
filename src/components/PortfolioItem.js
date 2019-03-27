@@ -8,13 +8,13 @@ import ReactMarkdown from "react-markdown";
 const Card = styled(
   posed.div({
     idle: {
-      height: 500,
+      height: 600,
       width: 500,
       transition: props => tween({ ...props, duration: 250 }),
       flip: true
     },
     fullscreen: {
-      height: "80vh",
+      height: "90vh",
       width: "100vw",
       transition: props => tween({ ...props, duration: 600 }),
       flip: true
@@ -32,9 +32,15 @@ class PortfolioItem extends Component {
       return null;
     } else {
       return (
-        <div className={this.props.active ? "col" : "col-12"}>
-          <img width="100%" src={this.props.image} alt={this.props.altText} />
-        </div>
+        // <div className={this.props.active ? "col" : "col-12"}>
+        <img
+          width="100%"
+          style={{ objectFit: "cover" }}
+          src={require("../assets" + this.props.image)}
+          alt={this.props.altText}
+          className="card-img-top"
+        />
+        // </div>
       );
     }
   };
@@ -42,7 +48,7 @@ class PortfolioItem extends Component {
   renderTitle = () => {
     if (this.props.active) {
       return (
-        <div className="card-title col-12">
+        <div className="card-title">
           <h4 className="text-center">
             <FontAwesomeIcon icon={this.props.icon} />
             <br />{" "}
@@ -60,7 +66,7 @@ class PortfolioItem extends Component {
       );
     } else {
       return (
-        <div className="card-title col-12">
+        <div className="card-title">
           <h4>
             <FontAwesomeIcon icon={this.props.icon} />{" "}
             <span dangerouslySetInnerHTML={{ __html: this.props.name }} />
@@ -90,10 +96,10 @@ class PortfolioItem extends Component {
           this.props.active ? "bg-dark text-light" : "bg-light text-primary"
         }
       >
-        <div className="card-body row">
+        {this.imageDiv()}
+        <div className="card-body d-flex flex-column justify-content-center">
           {this.renderTitle()}
-          {this.imageDiv()}
-          <div className={this.props.active ? "col" : "col-12"}>
+          <div>
             <ReactMarkdown
               escapeHtml={false}
               source={
@@ -103,15 +109,17 @@ class PortfolioItem extends Component {
             />
           </div>
         </div>
-        <a
-          href={this.props.link}
-          className="btn btn-primary"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
-        >
-          <FontAwesomeIcon icon="angle-double-right" /> More
-        </a>
+        <div className="card-footer">
+          <a
+            href={this.props.link}
+            className="btn btn-primary w-100"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
+          >
+            <FontAwesomeIcon icon="angle-double-right" /> More
+          </a>
+        </div>
       </Card>
     );
   }

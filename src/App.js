@@ -51,7 +51,7 @@ class App extends Component {
           <section className="my-3" id="portfolio">
             <h2>Portfolio</h2>
             <div
-              className="d-flex flex-row"
+              className="card-group"
               style={{
                 flexWrap: "nowrap",
                 overflowX: this.state.selectedCard === null ? "auto" : "hidden",
