@@ -6,31 +6,31 @@ export default () => {
     <div className="btn-group w-100">
       <SocialLink
         link="https://github.com/boardfish"
-        colorClass="primary"
+        colorClass="dark"
         icon={["fab", "github"]}
         text="GitHub"
       />
       <SocialLink
         link="mailto:si@mon.fish"
-        colorClass="primary"
+        colorClass="danger"
         icon="envelope"
         text="si@mon.fish"
       />
       <SocialLink
         link="https://linkedin.com/in/boardfish"
-        colorClass="primary"
+        colorClass="info"
         icon={["fab", "linkedin"]}
         text="LinkedIn"
       />
       <SocialLink
         link="https://twitter.com/boardfish_"
-        colorClass="primary"
+        colorClass="info"
         icon={["fab", "twitter"]}
         text="@boardfish_"
       />
       <SocialLink
         link="https://facebook.com/simonfish84"
-        colorClass="primary"
+        colorClass="info"
         icon={["fab", "facebook"]}
         text="Facebook"
       />

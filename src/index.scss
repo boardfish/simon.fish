@@ -1,4 +1,11 @@
+$body-color: #fff;
+$body-bg: #066e8a;
 $theme-colors: (
   "primary": #066e8a
 );
-@import "../node_modules/bootstrap/scss/bootstrap.scss"
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.blockquote-footer {
+  color: gray("300");
+}

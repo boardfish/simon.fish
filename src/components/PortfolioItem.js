@@ -84,7 +84,7 @@ class PortfolioItem extends Component {
               }
             : { minWidth: 250 }
         }
-        className={this.props.active ? "bg-dark text-light" : ""}
+        className={this.props.active ? "bg-dark text-light" : "bg-light text-primary"}
       >
         <div className="card-body row">
           {this.renderTitle()}
