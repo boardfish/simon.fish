@@ -21,7 +21,7 @@ const Card = styled(
     }
   })
 ).attrs({ className: "card" })`
-  transition: flex 0.5s ease-out, opacity 0.1s ease-out,
+  transition: all 0.4s ease-out, opacity 0.1s ease-out,
     background-color 0.6s ease-out;
   flex: 1 0 250px;
 `;
@@ -39,6 +39,33 @@ class PortfolioItem extends Component {
     }
   };
 
+  renderTitle = () => {
+    if (this.props.active) {
+      return (
+        <div className="card-title col-12">
+          <h4 className="text-center">
+            <FontAwesomeIcon icon={this.props.icon} />
+            <br /> {this.props.name}
+            <br />
+            <small className="text-muted">{`${this.props.location}, ${
+              this.props.date
+            }`}</small>
+          </h4>
+        </div>
+      );
+    } else {
+      return (
+        <div className="card-title col-12">
+          <h4>
+            <FontAwesomeIcon icon={this.props.icon} /> {this.props.name}
+            <br />
+            <small className="text-muted">{this.props.location}</small>
+          </h4>
+        </div>
+      );
+    }
+  };
+
   render() {
     return (
       <Card
@@ -48,21 +75,15 @@ class PortfolioItem extends Component {
           this.props.hidden
             ? {
                 flex: 0,
-                opacity: 0,
-                whiteSpace: "nowrap"
+                opacity: 0
+                // whiteSpace: "nowrap"
               }
             : { minWidth: 250 }
         }
         className={this.props.active ? "bg-dark text-light" : ""}
       >
         <div className="card-body row">
-          <div className="card-title col-12">
-            <h4>
-              <FontAwesomeIcon icon={this.props.icon} /> {this.props.name}
-              <br />
-              <small className="text-muted">{this.props.location}</small>
-            </h4>
-          </div>
+          {this.renderTitle()}
           {this.imageDiv()}
           <div className={this.props.active ? "col" : "col-12"}>
             <ReactMarkdown
@@ -72,6 +93,9 @@ class PortfolioItem extends Component {
               }
               className="card-text"
             />
+            <a href={this.props.link} className="btn btn-primary">
+              <FontAwesomeIcon icon={["fab", "github"]} /> Check it out
+            </a>
           </div>
         </div>
       </Card>

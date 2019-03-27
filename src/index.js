@@ -10,12 +10,42 @@ import {
   faLinkedin,
   faTwitter
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faFile,
+  faUsers,
+  faBomb,
+  faCloud,
+  faClock,
+  faGem,
+  faFemale,
+  faVolleyballBall,
+  faMoon,
+  faGamepad,
+  faExclamationCircle
+} from "@fortawesome/free-solid-svg-icons";
 
 // Bootstrap and styling imports
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // FontAwesome icon library intialisation
-library.add(faGithub, faEnvelope, faFile, faLinkedin, faFacebook, faTwitter);
+library.add(
+  faBomb,
+  faClock,
+  faCloud,
+  faExclamationCircle,
+  faGamepad,
+  faGem,
+  faGithub,
+  faEnvelope,
+  faFacebook,
+  faFemale,
+  faFile,
+  faLinkedin,
+  faMoon,
+  faTwitter,
+  faUsers,
+  faVolleyballBall
+);
 
 ReactDOM.render(<App />, document.getElementById("root"));

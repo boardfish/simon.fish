@@ -1,9 +1,9 @@
 [
   {
-      "name": "Great<wbr>Uni<wbr>Hack",
+      "name": "GreatUniHack",
       "location": "Manchester Metropolitan University",
       "image": "/images/portfolio/GreatUniHack-Winners.jpg",
-      "icon": "fa-diamond",
+      "icon": "gem",
       "project_name": "Game Master",
       "summary": "The product of my first hackathon, a text adventure game engine via Amazon Alexa with live web statistics.",
       "date": "12-13 November, 2016",
@@ -20,8 +20,8 @@
       "name": "HackNotts",
       "location": "University of Nottingham",
       "image": "/images/portfolio/HackNotts-Presenting.jpg",
-      "icon": "fa-clock-o",
-      "project_name": "Hacker<wbr>Tracker/<wbr>Prep",
+      "icon": "clock",
+      "project_name": "HackerTracker/Prep",
       "summary": "We learned the ins and out of using APIs such as GitHub and Twitter. I have since worked on reimplementing it in Ruby.",
       "date": "26-27 November 2016",
       "technologies": [
@@ -37,7 +37,7 @@
       "name": "MLH Prime EU Regional",
       "location": "Bloomberg Headquarters, London",
       "image": "/images/portfolio/MLHPrimeEU-Presenting.jpg",
-      "icon": "fa-bomb",
+      "icon": "bomb",
       "project_name": "Ka-Bomb!",
       "summary": "Our team created a prototype of an online multiplayer <i>Bomberman</i> clone, using a .NET socket server.",
       "date": "April 1-2 2017",
@@ -54,7 +54,7 @@
   {
       "name": "Cal Hacks 4.0",
       "location": "UC Berkeley, California",
-      "icon": "fa-users",
+      "icon": "users",
       "project_name": "mygit.club",
       "summary": "Using GitHub's GraphQL API, I helped build a front-facing organisation page. This hack was the start of a week-long tech pilgrimage to the USA, featuring GitHub and Google.",
       "date": "6th-7th October, 2017",
@@ -68,10 +68,10 @@
       "description": "On our first full day in California, [Matt](https://github.com/mattburman), [Borja](https://github.com/p3rzival) and I worked together to develop a more malleable team section for the HackSheffield society's website. As the founder of HackSheffield and a strong supporter of Git as a universal tool, Matt had the idea of using GitHub as a content management system for quite some time. I thought that GitHub's organisation support, and teams within those, had strong potential but weren't very front-facing to consumers. Inspired by 'meet the team' sections in some startups' sites, we decided to work on using GitHub to retrieve HackSheffield committee members' profiles in one smooth query with GraphQL, making the information more easy to maintain using GitHub itself. It also has the added benefit of decentralising the site's data to those who really should have control over it - the profiles visible there reflect the latest data they have made available on GitHub. We brought this live at [mygit.club](http://mygit.club). I have since made my first pull request to [hack.sheffield.ac.uk](https://hack.sheffield.ac.uk) with the intent of porting it across and learned lots about Node.js in the process."
     },
   {
-      "name": "Hack<wbr>Sheffield 3.0",
+      "name": "HackSheffield 3.0",
       "location": "University of Sheffield",
       "image": "/images/portfolio/HackSheffield.jpg",
-      "icon": "fa-exclamation-circle",
+      "icon": "exclamation-circle",
       "project_name": "NotiFeed",
       "summary": "I led a team of first-time hackers using Express and Node.js.",
       "date": "14th-15th October, 2017",
@@ -87,7 +87,7 @@
       "name": "Nintendo Event",
       "location": "Smyth's Toy Store, Sheffield",
       "image": "/images/portfolio/NintendoEvent.jpg",
-      "icon": "fa-gamepad",
+      "icon": "gamepad",
       "project_name": "Super Mario Odyssey launch",
       "summary": "As a Brand Ambassador for Nintendo, I assisted with the Super Mario Odyssey launch.",
       "date": "28th-29th October, 2017",
@@ -101,7 +101,7 @@
       "name": "BrumHack 7.0",
       "location": "University of Birmingham",
       "image": "/images/portfolio/BrumHack-Winner.jpg",
-      "icon": "fa-moon-o",
+      "icon": "moon",
       "project_name": "The Odyssey",
       "summary": "Inspired by Super Mario Odyssey, I explored Alexa Skills Kit and Discord's API, and built an API of my own surrounding the game's collectibles to work with the two.",
       "date": "18th-19th November, 2017",
@@ -118,7 +118,7 @@
   {
       "name": "HackTheBurgh 2018",
       "location": "University of Edinburgh",
-      "icon": "fa-circle",
+      "icon": "volleyball-ball",
       "project_name": "ShefBall",
       "summary": "As my final second year hackathon, I used my learnings from MLH Prime to explore Kiwi.js and build a web-based dodgeball game.",
       "date": "10th-11th March, 2018",
@@ -135,7 +135,7 @@
   {
       "name": "Code First Girls Sheffield",
       "location": "University of Sheffield",
-      "icon": "fa-female",
+      "icon": "female",
       "project_name": "#shefcodefirst",
       "summary": "I volunteered as an assisting instructor to a diverse class of female/BME first-time programmers.",
       "date": "Semester 2, 2017-2018",
@@ -152,7 +152,7 @@
   {
       "name": "UKCloud",
       "location": "Farnborough",
-      "icon": "fa-cloud",
+      "icon": "cloud",
       "project_name": "ID & Access Management",
       "summary": "I am currently working in a Scrum development team, building a Rails API backed by Red Hat SSO.",
       "date": "July 2018-present",
