@@ -48,20 +48,21 @@ class PortfolioItem extends Component {
   renderTitle = () => {
     if (this.props.active) {
       return (
-        <div className="card-title">
-          <h4 className="text-center">
+        <div className="card-title text-center">
+          <h4>
             <FontAwesomeIcon icon={this.props.icon} />
             <br />{" "}
             <span dangerouslySetInnerHTML={{ __html: this.props.name }} />
             <br />
             <small className="text-muted">
               {`${this.props.location}, ${this.props.date}`}
-              <br />
-              {this.props.tags.map(tag => {
-                return <span className="badge badge-primary mx-1">{tag}</span>;
-              })}
             </small>
           </h4>
+          <div>
+            {this.props.tags.map(tag => {
+              return <span className="badge badge-primary mx-1">{tag}</span>;
+            })}
+          </div>
         </div>
       );
     } else {
