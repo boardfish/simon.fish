@@ -13,7 +13,7 @@ class Header extends Component {
           md="6"
           className="d-flex flex-column justify-content-center align-items-center"
         >
-          <Card className="text-center">
+          <Card className="text-center text-primary">
             <CardBody>
               <img
                 className="w-100 p-3 rounded"
