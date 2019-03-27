@@ -54,7 +54,8 @@ class App extends Component {
               className="d-flex flex-row"
               style={{
                 flexWrap: "nowrap",
-                overflowX: this.state.selectedCard === null ? "auto" : "hidden"
+                overflowX: this.state.selectedCard === null ? "auto" : "hidden",
+                overflowY: "hidden"
               }}
             >
               {this.renderPortfolio()}
