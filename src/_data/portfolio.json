@@ -7,7 +7,7 @@
       "project_name": "Game Master",
       "summary": "The product of my first hackathon, a text adventure game engine via Amazon Alexa with live web statistics.",
       "date": "12-13 November, 2016",
-      "technologies": [
+      "tags": [
             "HTML",
             "CSS",
             "jQuery",
@@ -24,7 +24,7 @@
       "project_name": "HackerTracker/Prep",
       "summary": "We learned the ins and out of using APIs such as GitHub and Twitter. I have since worked on reimplementing it in Ruby.",
       "date": "26-27 November 2016",
-      "technologies": [
+      "tags": [
             "HTML/CSS",
             "PHP",
             "Ruby",
@@ -41,7 +41,7 @@
       "project_name": "Ka-Bomb!",
       "summary": "Our team created a prototype of an online multiplayer <i>Bomberman</i> clone, using a .NET socket server.",
       "date": "April 1-2 2017",
-      "technologies": [
+      "tags": [
             "HTML",
             "CSS",
             "JS",
@@ -58,7 +58,7 @@
       "project_name": "mygit.club",
       "summary": "Using GitHub's GraphQL API, I helped build a front-facing organisation page. This hack was the start of a week-long tech pilgrimage to the USA, featuring GitHub and Google.",
       "date": "6th-7th October, 2017",
-      "technologies": [
+      "tags": [
             "Node.js",
             "Pug",
             "GraphQL",
@@ -75,7 +75,7 @@
       "project_name": "NotiFeed",
       "summary": "I led a team of first-time hackers using Express and Node.js.",
       "date": "14th-15th October, 2017",
-      "technologies": [
+      "tags": [
             "Express",
             "Node.js",
             "Bootstrap"
@@ -91,7 +91,7 @@
       "project_name": "Super Mario Odyssey launch",
       "summary": "As a Brand Ambassador for Nintendo, I assisted with the Super Mario Odyssey launch.",
       "date": "28th-29th October, 2017",
-      "technologies": [
+      "tags": [
             "Nintendo Switch",
             "Sales"
           ],
@@ -105,7 +105,7 @@
       "project_name": "The Odyssey",
       "summary": "Inspired by Super Mario Odyssey, I explored Alexa Skills Kit and Discord's API, and built an API of my own surrounding the game's collectibles to work with the two.",
       "date": "18th-19th November, 2017",
-      "technologies": [
+      "tags": [
             "Alexa Skills Kit",
             "Discord API",
             "Flask",
@@ -122,7 +122,7 @@
       "project_name": "ShefBall",
       "summary": "As my final second year hackathon, I used my learnings from MLH Prime to explore Kiwi.js and build a web-based dodgeball game.",
       "date": "10th-11th March, 2018",
-      "technologies": [
+      "tags": [
             "Kiwi.js",
             "Node.js",
             "Socket.js",
@@ -139,7 +139,7 @@
       "project_name": "#shefcodefirst",
       "summary": "I volunteered as an assisting instructor to a diverse class of female/BME first-time programmers.",
       "date": "Semester 2, 2017-2018",
-      "technologies": [
+      "tags": [
             "HTML/CSS/JS",
             "Bootstrap",
             "GitHub",
@@ -156,7 +156,7 @@
       "project_name": "ID & Access Management",
       "summary": "I am currently working in a Scrum development team, building a Rails API backed by Red Hat SSO.",
       "date": "July 2018-present",
-      "technologies": [
+      "tags": [
             "Rails",
             "Docker",
             "docker-compose",

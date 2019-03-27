@@ -47,9 +47,13 @@ class PortfolioItem extends Component {
             <FontAwesomeIcon icon={this.props.icon} />
             <br /> {this.props.name}
             <br />
-            <small className="text-muted">{`${this.props.location}, ${
-              this.props.date
-            }`}</small>
+            <small className="text-muted">
+              {`${this.props.location}, ${this.props.date}`}
+              <br />
+              {this.props.tags.map(tag => {
+                return <span className="badge badge-primary mx-1">{tag}</span>;
+              })}
+            </small>
           </h4>
         </div>
       );
@@ -93,11 +97,17 @@ class PortfolioItem extends Component {
               }
               className="card-text"
             />
-            <a href={this.props.link} className="btn btn-primary">
-              <FontAwesomeIcon icon={["fab", "github"]} /> Check it out
-            </a>
           </div>
         </div>
+        <a
+          href={this.props.link}
+          className="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
+        >
+          <FontAwesomeIcon icon="angle-double-right" /> More
+        </a>
       </Card>
     );
   }
