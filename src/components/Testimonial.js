@@ -10,7 +10,7 @@ export default props => {
         {props.authorRole ? `, ${props.authorRole}` : ""}
       </footer>
       <a
-        class="btn btn-lg btn-color btn-outline-primary mt-3"
+        class="btn btn-lg btn-color btn-outline-secondary mt-3"
         target="_blank"
         rel="noopener noreferrer"
         href={props.link}

@@ -42,19 +42,30 @@ class App extends Component {
     return (
       <Container fluid>
         <Container>
-          <Header />
-          <About />
-          <div
-            className="d-flex flex-row"
-            style={{
-              flexWrap: "nowrap",
-              overflowX: this.state.selectedCard === null ? "auto" : "visible"
-            }}
-          >
-            {this.renderPortfolio()}
-          </div>
-          <TestimonialsSection />
-          <ContactMe />
+          <section className="my-3" id="header">
+            <Header />
+          </section>
+          <section className="my-3" id="about">
+            <About />
+          </section>
+          <section className="my-3" id="portfolio">
+            <h2>Portfolio</h2>
+            <div
+              className="d-flex flex-row"
+              style={{
+                flexWrap: "nowrap",
+                overflowX: this.state.selectedCard === null ? "auto" : "visible"
+              }}
+            >
+              {this.renderPortfolio()}
+            </div>
+          </section>
+          <section className="my-3" id="testimonials">
+            <TestimonialsSection />
+          </section>
+          <section className="my-3" id="contact-me">
+            <ContactMe />
+          </section>
         </Container>
       </Container>
     );
