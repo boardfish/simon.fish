@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import posed, { PoseGroup } from "react-pose";
+import posed from "react-pose";
 import styled from "styled-components";
 import { tween } from "popmotion";
 import ReactMarkdown from "react-markdown";
@@ -33,7 +33,7 @@ class PortfolioItem extends Component {
     } else {
       return (
         <div className={this.props.active ? "col" : "col-12"}>
-          <img width="100%" src={this.props.image} alt="Card image cap" />
+          <img width="100%" src={this.props.image} alt={this.props.altText} />
         </div>
       );
     }
