@@ -6,7 +6,10 @@ export default () => {
   return (
     <div>
       <h2>Testimonials</h2>
-      <div className={Testimonials.length <= 3 ? "card-deck" : "card-columns"}>
+      <div
+        className={Testimonials.length <= 3 ? "card-deck" : "card-columns"}
+        style={{ columnCount: Testimonials.length % 2 === 0 ? 2 : 3 }}
+      >
         {Testimonials.map(testimonial => {
           return <Testimonial {...testimonial} />;
         })}
