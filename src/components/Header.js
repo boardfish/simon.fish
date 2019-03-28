@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col, Card, CardBody } from "reactstrap";
 import ProfileImage from "../assets/images/profile.jpg";
+import Logo from "../assets/images/LogoWhite.svg";
 import SocialLinkGroup from "./SocialLinkGroup";
 
 class Header extends Component {
