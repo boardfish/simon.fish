@@ -6,7 +6,7 @@ export default () => {
   return (
     <div>
       <h2>Testimonials</h2>
-      <div className="card-columns">
+      <div className={Testimonials.length <= 3 ? "card-deck" : "card-columns"}>
         {Testimonials.map(testimonial => {
           return <Testimonial {...testimonial} />;
         })}
