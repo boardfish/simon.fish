@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col, Card, CardBody } from "reactstrap";
-import ProfileImage from "../images/profile.jpg";
-import Logo from "../images/LogoWhite.svg";
+import ProfileImage from "../assets/images/profile.jpg";
+import Logo from "../assets/images/LogoWhite.svg";
 import SocialLinkGroup from "./SocialLinkGroup";
 
 class Header extends Component {
@@ -10,7 +10,7 @@ class Header extends Component {
       <Row>
         <Col
           xs="12"
-          md="6"
+          lg="6"
           className="d-flex flex-column justify-content-center align-items-center"
         >
           <Card className="text-center text-primary">
@@ -32,7 +32,7 @@ class Header extends Component {
           className="d-flex justify-content-center align-items-center"
         >
           <img
-            className="w-100 p-3 rounded"
+            className="w-100 p-3 rounded mx-auto"
             src={Logo}
             alt="Simon in a GitHub hoodie and Ausdom M05 headphones."
           />
