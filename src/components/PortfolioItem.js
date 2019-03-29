@@ -14,7 +14,7 @@ const Card = styled(
       flip: true
     },
     fullscreen: {
-      height: "90vh",
+      height: "70em",
       width: "100vw",
       transition: props => tween({ ...props, duration: 600 }),
       flip: true
