@@ -1,0 +1,32 @@
+[
+  {
+    "link": "https://github.com/boardfish",
+    "colorClass": "github",
+    "icon": ["fab", "github"],
+    "text": "GitHub"
+  },
+  {
+    "link": "mailto:si@mon.fish",
+    "colorClass": "danger",
+    "icon": "envelope",
+    "text": "si@mon.fish"
+  },
+  {
+    "link": "https://linkedin.com/in/boardfish",
+    "colorClass": "linkedin",
+    "icon": ["fab", "linkedin"],
+    "text": "LinkedIn"
+  },
+  {
+    "link": "https://twitter.com/boardfish_",
+    "colorClass": "twitter",
+    "icon": ["fab", "twitter"],
+    "text": "@boardfish_"
+  },
+  {
+    "link": "https://facebook.com/simonfish84",
+    "colorClass": "facebook",
+    "icon": ["fab", "facebook"],
+    "text": "Facebook"
+  }
+]
