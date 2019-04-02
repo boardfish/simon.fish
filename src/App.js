@@ -92,7 +92,7 @@ class App extends Component {
                 </NavItem>
               </Nav>
             </Col>
-            <Col sm={9} md={10} className="bg-primary text-light">
+            <Col sm={9} md={10} className="bg-primary text-secondary">
               <main className="container">
                 <section
                   className="py-3"

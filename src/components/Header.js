@@ -8,7 +8,7 @@ class Header extends Component {
   render() {
     return (
       <Card
-        className="text-center text-primary"
+        className="text-center text-primary bg-secondary"
         style={{ flexGrow: 1, flexBasis: 0 }}
       >
         <CardBody>

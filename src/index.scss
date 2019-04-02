@@ -1,8 +1,10 @@
-$body-color: #fff;
-$body-bg: #066e8a;
+$primary: #069;
+$body-bg: $primary;
+$secondary: #fff;
+$body-color: $secondary;
 $theme-colors: (
-  "primary": #066e8a,
-  "secondary": #fff,
+  "primary": $primary,
+  "secondary": $secondary,
   "twitter": #38A1F3,
   "facebook": #3b5998,
   "github": #333,

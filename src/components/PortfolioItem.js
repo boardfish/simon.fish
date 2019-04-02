@@ -94,7 +94,7 @@ class PortfolioItem extends Component {
             : { minWidth: 250 }
         }
         className={
-          this.props.active ? "bg-dark text-light" : "bg-light text-primary"
+          this.props.active ? "bg-dark text-light" : "bg-secondary text-primary"
         }
       >
         {this.imageDiv()}

@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 
 export default props => {
   return (
-    <Card className="text-primary">
+    <Card className="bg-secondary text-primary">
       <CardBody className="d-flex flex-column justify-content-center">
         <blockquote className="blockquote text-center">
           <ReactMarkdown

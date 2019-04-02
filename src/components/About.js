@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default props => {
   return (
     <div>
-      <p>
+      <p className="text-secondary">
         I am a third-year student at the University of Sheffield, studying a
         four-year course in Computer Science including a year in industry. My
         main aim is to become a software developer, with the goal of building
