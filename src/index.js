@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import './index.scss'
+import "./index.scss";
 
 // FontAwesome imports
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -24,7 +24,10 @@ import {
   faMoon,
   faGamepad,
   faExclamationCircle,
-  faAngleDoubleRight
+  faAngleDoubleRight,
+  faUser,
+  faFolderOpen,
+  faComments
 } from "@fortawesome/free-solid-svg-icons";
 
 // FontAwesome icon library intialisation
@@ -33,6 +36,7 @@ library.add(
   faBomb,
   faClock,
   faCloud,
+  faComments,
   faExclamationCircle,
   faGamepad,
   faGem,
@@ -40,10 +44,12 @@ library.add(
   faEnvelope,
   faFacebook,
   faFemale,
+  faFolderOpen,
   faFile,
   faLinkedin,
   faMoon,
   faTwitter,
+  faUser,
   faUsers,
   faVolleyballBall
 );

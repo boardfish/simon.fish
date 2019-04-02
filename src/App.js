@@ -15,6 +15,8 @@ import ContactMe from "./components/ContactMe";
 import PortfolioItem from "./components/PortfolioItem";
 import Portfolio from "./_data/portfolio";
 import Logo from "./assets/images/LogoWhite.svg";
+import SocialLinkGroup from "./components/SocialLinkGroup";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class App extends Component {
   state = { selectedCard: null };
@@ -60,44 +62,54 @@ class App extends Component {
                   top: 51
                 }}
               >
+                <img
+                  src={Logo}
+                  alt="Pixelated fish logo"
+                  className="mx-auto mb-3"
+                  style={{ width: "10vw" }}
+                />
+                <h4>Simon Fish</h4>
                 <NavItem>
-                  <img
-                    src={Logo}
-                    alt="Pixelated fish logo"
-                    className="mx-auto mb-3"
-                    style={{ width: "10vw" }}
-                  />
-                  <NavLink href="/components/" className="text-light p-0">
-                    About
+                  <NavLink href="#about" className="text-light p-0">
+                    <FontAwesomeIcon fixedWidth icon="user" /> About
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/components/" className="text-light p-0">
-                    Portfolio
+                  <NavLink href="#portfolio" className="text-light p-0">
+                    <FontAwesomeIcon fixedWidth icon="folder-open" /> Portfolio
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/components/" className="text-light p-0">
-                    Testimonials
+                  <NavLink href="#testimonials" className="text-light p-0">
+                    <FontAwesomeIcon fixedWidth icon="comments" /> Testimonials
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/components/" className="text-light p-0">
-                    Contact Me
+                  <NavLink href="#contact-me" className="text-light p-0">
+                    <FontAwesomeIcon fixedWidth icon="envelope" /> Contact Me
                   </NavLink>
                 </NavItem>
               </Nav>
             </Col>
             <Col sm={9} md={10} className="bg-primary text-light">
-              <main>
-                <section className="my-3" id="header">
-                  <Header />
+              <main className="container">
+                <section
+                  className="py-3"
+                  id="about"
+                  style={{ maxHeight: "100vh" }}
+                >
+                  <div className="row pb-3">
+                    <Header className="col" />
+                    <div className="col d-flex align-items-center">
+                      <About />
+                    </div>
+                  </div>
+                  <SocialLinkGroup />
                 </section>
-                <section className="my-3" id="about">
-                  <About />
-                </section>
-                <section className="my-3" id="portfolio">
-                  <h2>Portfolio</h2>
+                <section className="py-3" id="portfolio">
+                  <h2>
+                    <FontAwesomeIcon icon="folder-open" /> Portfolio
+                  </h2>
                   <div
                     className="card-group"
                     style={{
@@ -113,10 +125,10 @@ class App extends Component {
                     Click on an item to learn more.
                   </UncontrolledTooltip>
                 </section>
-                <section className="my-3" id="testimonials">
+                <section className="py-3" id="testimonials">
                   <TestimonialsSection />
                 </section>
-                <section className="my-3" id="contact-me">
+                <section className="py-3" id="contact-me">
                   <ContactMe />
                 </section>
               </main>

@@ -25,3 +25,14 @@ $headings-font-family: 'Orbitron', $font-family-sans-serif;
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
