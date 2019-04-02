@@ -56,6 +56,7 @@ class App extends Component {
           <Row>
             <Col sm={3} md={2} className="bg-dark text-light">
               <Nav
+                id="navbar"
                 className="text-light flex-column"
                 style={{
                   position: "fixed",
@@ -100,7 +101,10 @@ class App extends Component {
                 >
                   <div className="row pb-3">
                     <Header className="col" />
-                    <div className="col d-flex align-items-center">
+                    <div className="col d-flex flex-column justify-content-center">
+                      <h2>
+                        <FontAwesomeIcon icon="user" /> About
+                      </h2>
                       <About />
                     </div>
                   </div>
@@ -126,9 +130,15 @@ class App extends Component {
                   </UncontrolledTooltip>
                 </section>
                 <section className="py-3" id="testimonials">
+                  <h2>
+                    <FontAwesomeIcon icon="comments" /> Testimonials
+                  </h2>
                   <TestimonialsSection />
                 </section>
                 <section className="py-3" id="contact-me">
+                  <h2>
+                    <FontAwesomeIcon icon="envelope" /> Contact Me
+                  </h2>
                   <ContactMe />
                 </section>
               </main>

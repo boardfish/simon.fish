@@ -4,9 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default props => {
   return (
     <div>
-      <h2>
-        <FontAwesomeIcon icon="user" /> About
-      </h2>
       <p>
         I am a third-year student at the University of Sheffield, studying a
         four-year course in Computer Science including a year in industry. My

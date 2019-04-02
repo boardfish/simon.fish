@@ -21,7 +21,7 @@ export default props => {
       </CardBody>
       <CardFooter className="text-center">
         <a
-          class="btn btn-lg btn-color btn-outline-primary"
+          className="btn btn-lg btn-color btn-outline-primary"
           target="_blank"
           rel="noopener noreferrer"
           href={props.link}

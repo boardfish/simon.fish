@@ -5,9 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default () => {
   return (
     <div>
-      <h2>
-        <FontAwesomeIcon icon="envelope" /> Contact Me
-      </h2>
       <p>
         If you've taken an interest in what you see here, I look forward to you
         contacting me personally via any of the following means. I take
