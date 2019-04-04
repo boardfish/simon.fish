@@ -94,14 +94,10 @@ class App extends Component {
             </Col>
             <Col sm={9} md={10} className="bg-primary text-secondary">
               <main className="container">
-                <section
-                  className="py-3"
-                  id="about"
-                  style={{ maxHeight: "100vh" }}
-                >
-                  <div className="row pb-3">
-                    <Header className="col" />
-                    <div className="col d-flex flex-column justify-content-center">
+                <section className="py-3" id="about">
+                  <div className="row pb-md-3">
+                    <Header className="col-md" />
+                    <div className="col-md d-flex flex-column justify-content-center mt-3 mt-md-0">
                       <h2>
                         <FontAwesomeIcon icon="user" /> About
                       </h2>
@@ -110,7 +106,7 @@ class App extends Component {
                   </div>
                   <SocialLinkGroup />
                 </section>
-                <section className="py-3" id="portfolio">
+                <section className="py-3 d-none d-md-flex" id="portfolio">
                   <h2>
                     <FontAwesomeIcon icon="folder-open" /> Portfolio
                   </h2>
