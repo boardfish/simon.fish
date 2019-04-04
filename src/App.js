@@ -98,7 +98,7 @@ class App extends Component {
                   <div className="row pb-md-3">
                     <Header className="col-md" />
                     <div className="col-md d-flex flex-column justify-content-center mt-3 mt-md-0">
-                      <h2>
+                      <h2 className="sticky-top bg-dark p-2 rounded">
                         <FontAwesomeIcon icon="user" /> About
                       </h2>
                       <About />
@@ -108,7 +108,7 @@ class App extends Component {
                 </section>
                 <hr />
                 <section className="py-3 d-none d-md-flex" id="portfolio">
-                  <h2>
+                  <h2 className="sticky-top bg-dark p-2 rounded">
                     <FontAwesomeIcon icon="folder-open" /> Portfolio
                   </h2>
                   <div
@@ -128,14 +128,14 @@ class App extends Component {
                 </section>
                 <hr />
                 <section className="py-3" id="testimonials">
-                  <h2>
+                  <h2 className="sticky-top bg-dark p-2 rounded">
                     <FontAwesomeIcon icon="comments" /> Testimonials
                   </h2>
                   <TestimonialsSection />
                 </section>
                 <hr />
                 <section className="py-3" id="contact-me">
-                  <h2>
+                  <h2 className="sticky-top bg-dark p-2 rounded">
                     <FontAwesomeIcon icon="envelope" /> Contact Me
                   </h2>
                   <ContactMe />
