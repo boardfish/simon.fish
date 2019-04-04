@@ -106,6 +106,7 @@ class App extends Component {
                   </div>
                   <SocialLinkGroup />
                 </section>
+                <hr />
                 <section className="py-3 d-none d-md-flex" id="portfolio">
                   <h2>
                     <FontAwesomeIcon icon="folder-open" /> Portfolio
@@ -125,12 +126,14 @@ class App extends Component {
                     Click on an item to learn more.
                   </UncontrolledTooltip>
                 </section>
+                <hr />
                 <section className="py-3" id="testimonials">
                   <h2>
                     <FontAwesomeIcon icon="comments" /> Testimonials
                   </h2>
                   <TestimonialsSection />
                 </section>
+                <hr />
                 <section className="py-3" id="contact-me">
                   <h2>
                     <FontAwesomeIcon icon="envelope" /> Contact Me
