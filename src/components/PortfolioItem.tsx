@@ -4,19 +4,20 @@ import posed from "react-pose";
 import styled from "styled-components";
 import { tween } from "popmotion";
 import ReactMarkdown from "react-markdown";
+import { IconLookup, findIconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 const Card = styled(
   posed.div({
     idle: {
       height: 600,
       width: 500,
-      transition: props => tween({ ...props, duration: 250 }),
+      transition: (props: object) => tween({ ...props, duration: 250 }),
       flip: true
     },
     fullscreen: {
       height: "70em",
       width: "100vw",
-      transition: props => tween({ ...props, duration: 600 }),
+      transition: (props: object) => tween({ ...props, duration: 600 }),
       flip: true
     }
   })
@@ -26,7 +27,7 @@ const Card = styled(
   flex: 1 0 250px;
 `;
 
-class PortfolioItem extends Component {
+class PortfolioItem extends Component<{image: string, altText: string, active: boolean, icon: object, name: string, date: Date, tags: [string], location: string, hidden: boolean, description: string, summary: string, link: string, onClick: Function}, {}> {
   imageDiv = () => {
     if (!this.props.image) {
       return null;
@@ -50,7 +51,7 @@ class PortfolioItem extends Component {
       return (
         <div className="card-title text-center">
           <h4>
-            <FontAwesomeIcon icon={this.props.icon} />
+            <FontAwesomeIcon icon={findIconDefinition(this.props.icon as IconLookup)} />
             <br />{" "}
             <span dangerouslySetInnerHTML={{ __html: this.props.name }} />
             <br />
@@ -69,7 +70,7 @@ class PortfolioItem extends Component {
       return (
         <div className="card-title">
           <h4>
-            <FontAwesomeIcon icon={this.props.icon} />{" "}
+            <FontAwesomeIcon icon={findIconDefinition(this.props.icon as IconLookup)} />{" "}
             <span dangerouslySetInnerHTML={{ __html: this.props.name }} />
             <br />
             <small className="text-muted">{this.props.location}</small>
