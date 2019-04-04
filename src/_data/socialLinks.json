@@ -2,37 +2,37 @@
   {
     "link": "https://github.com/boardfish",
     "colorClass": "github",
-    "icon": ["fab", "github"],
+    "icon": {"prefix": "fab", "iconName": "github"},
     "text": "boardfish"
   },
   {
     "link": "mailto:si@mon.fish",
     "colorClass": "danger",
-    "icon": "envelope",
+    "icon": {"prefix": "fas", "iconName": "envelope"},
     "text": "si@mon.fish"
   },
   {
     "link": "https://linkedin.com/in/boardfish",
     "colorClass": "linkedin",
-    "icon": ["fab", "linkedin"],
+    "icon": {"prefix": "fab", "iconName": "linkedin"},
     "text": "boardfish"
   },
   {
     "link": "https://twitter.com/boardfish_",
     "colorClass": "twitter",
-    "icon": ["fab", "twitter"],
+    "icon": {"prefix": "fab", "iconName": "twitter"},
     "text": "@boardfish_"
   },
   {
     "link": "https://facebook.com/simonfish84",
     "colorClass": "facebook",
-    "icon": ["fab", "facebook"],
+    "icon": {"prefix": "fab", "iconName": "facebook"},
     "text": "simonfish84"
   },
   {
     "link": "https://monzo.me/simonfish",
     "colorClass": "monzo",
-    "icon": "credit-card",
+    "icon": {"prefix": "fas", "iconName": "credit-card"},
     "text": "simonfish"
   }
 ]
