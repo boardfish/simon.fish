@@ -3,7 +3,7 @@
     "link": "https://github.com/boardfish",
     "colorClass": "github",
     "icon": ["fab", "github"],
-    "text": "GitHub"
+    "text": "boardfish"
   },
   {
     "link": "mailto:si@mon.fish",
@@ -15,7 +15,7 @@
     "link": "https://linkedin.com/in/boardfish",
     "colorClass": "linkedin",
     "icon": ["fab", "linkedin"],
-    "text": "LinkedIn"
+    "text": "boardfish"
   },
   {
     "link": "https://twitter.com/boardfish_",
@@ -27,12 +27,12 @@
     "link": "https://facebook.com/simonfish84",
     "colorClass": "facebook",
     "icon": ["fab", "facebook"],
-    "text": "Facebook"
+    "text": "simonfish84"
   },
   {
     "link": "https://monzo.me/simonfish",
     "colorClass": "monzo",
     "icon": "credit-card",
-    "text": "Monzo.me"
+    "text": "simonfish"
   }
 ]
