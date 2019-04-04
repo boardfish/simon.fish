@@ -28,5 +28,11 @@
     "colorClass": "facebook",
     "icon": ["fab", "facebook"],
     "text": "Facebook"
+  },
+  {
+    "link": "https://monzo.me/simonfish",
+    "colorClass": "monzo",
+    "icon": "credit-card",
+    "text": "Monzo.me"
   }
 ]
