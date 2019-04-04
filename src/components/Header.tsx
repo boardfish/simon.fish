@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Card, CardBody } from "reactstrap";
 import ProfileImage from "../assets/images/profile.jpg";
-import Technologies from "../_data/technologies";
+import Technologies from "../_data/technologies.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { findIconDefinition, IconLookup } from "@fortawesome/fontawesome-svg-core";
 
 class Header extends Component {
   render() {
@@ -21,9 +22,9 @@ class Header extends Component {
             <h1 className="display-4">Simon Fish</h1>
             <p className="lead">Student. Software engineer. Explorer.</p>
             <p className="lead">
-              {Technologies.map((tech, i, array) => (
+              {Technologies.map(tech => (
                 <span className="h4 mx-2">
-                  <FontAwesomeIcon icon={tech.icon} fixedWidth />
+                  <FontAwesomeIcon icon={findIconDefinition(tech.icon as IconLookup)} fixedWidth />
                 </span>
               ))}
             </p>

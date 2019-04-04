@@ -1,8 +1,8 @@
 [
-  { "icon": "gem", "text": "Ruby on Rails" },
-  { "icon": ["fab", "react"], "text": "React" },
-  { "icon": ["fab", "bootstrap"], "text": "Bootstrap 4" },
-  { "icon": ["fab", "html5"], "text": "HTML/CSS/JS" },
-  { "icon": "terminal", "text": "Shell scripting" },
-  { "icon": "comments", "text": "Alexa Skills Kit" }
+  { "icon": {"prefix": "fas", "iconName": "gem"}, "text": "Ruby on Rails" },
+  { "icon": {"prefix": "fab", "iconName": "react"}, "text": "React" },
+  { "icon": {"prefix": "fab", "iconName": "bootstrap"}, "text": "Bootstrap 4" },
+  { "icon": {"prefix": "fab", "iconName": "html5"}, "text": "HTML/CSS/JS" },
+  { "icon": {"prefix": "fas", "iconName": "terminal"}, "text": "Shell scripting" },
+  { "icon": {"prefix": "fas", "iconName": "comments"}, "text": "Alexa Skills Kit" }
 ]
