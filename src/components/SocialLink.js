@@ -10,7 +10,9 @@ export default props => {
       className={`btn btn-${props.colorClass}`}
     >
       <FontAwesomeIcon icon={props.icon} />{" "}
-      <span className="d-none d-md-inline">{props.text}</span>
+      <span className={props.forceShowName ? "" : "d-none d-md-inline"}>
+        {props.text}
+      </span>
     </a>
   );
 };
