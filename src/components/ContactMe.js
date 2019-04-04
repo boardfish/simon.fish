@@ -1,6 +1,5 @@
 import React from "react";
 import SocialLinkGroup from "./SocialLinkGroup";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default () => {
   return (

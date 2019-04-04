@@ -1,7 +1,6 @@
 import React from "react";
 import Testimonial from "./Testimonial";
 import Testimonials from "../_data/testimonials";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default () => {
   return (

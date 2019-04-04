@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import { Row, Col, Card, CardBody } from "reactstrap";
+import { Card, CardBody } from "reactstrap";
 import ProfileImage from "../assets/images/profile.jpg";
-import Logo from "../assets/images/LogoWhite.svg";
-import SocialLinkGroup from "./SocialLinkGroup";
 import Technologies from "../_data/technologies";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
