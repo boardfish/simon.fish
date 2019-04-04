@@ -7,10 +7,14 @@ export default props => {
       href={props.link}
       target="_blank"
       rel="noopener noreferrer"
-      className={`btn btn-${props.colorClass}`}
+      className={`btn btn-${
+        props.colorClass
+      } d-flex flex-row align-items-center`}
     >
-      <FontAwesomeIcon icon={props.icon} />{" "}
-      <span className={props.forceShowName ? "" : "d-none d-md-inline"}>
+      <FontAwesomeIcon icon={props.icon} fixedWidth />{" "}
+      <span
+        className={`mx-auto ${props.forceShowName ? "" : "d-none d-md-inline"}`}
+      >
         {props.text}
       </span>
     </a>
