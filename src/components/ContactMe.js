@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default () => {
   return (
-    <div className="d-flex flex-column flex-md-row">
+    <div className="d-flex flex-column flex-md-row align-items-center">
       <p className="text-justify px-3 ">
         If you've taken an interest in what you see here, I look forward to you
         contacting me personally via any of the following means. Or, if you're
