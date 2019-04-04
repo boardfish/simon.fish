@@ -2,8 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card, CardBody, CardFooter } from "reactstrap";
 import ReactMarkdown from "react-markdown";
+import { findIconDefinition, IconLookup } from "@fortawesome/fontawesome-svg-core";
 
-export default props => {
+export default (props: { text: string, author: string, authorRole: string, link: string, icon: object}) => {
   return (
     <Card className="bg-secondary text-primary">
       <CardBody className="d-flex flex-column justify-content-center">
@@ -26,7 +27,7 @@ export default props => {
           rel="noopener noreferrer"
           href={props.link}
         >
-          <FontAwesomeIcon icon={props.icon} /> Full reference
+          <FontAwesomeIcon icon={findIconDefinition(props.icon as IconLookup)} /> Full reference
         </a>
       </CardFooter>
     </Card>
