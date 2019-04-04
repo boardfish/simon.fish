@@ -9,7 +9,11 @@ import {
   faFacebook,
   faGithub,
   faLinkedin,
-  faTwitter
+  faTwitter,
+  faReact,
+  faHtml5,
+  faBootstrap,
+  faAmazon
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
@@ -27,13 +31,16 @@ import {
   faAngleDoubleRight,
   faUser,
   faFolderOpen,
-  faComments
+  faComments,
+  faTerminal
 } from "@fortawesome/free-solid-svg-icons";
 
 // FontAwesome icon library intialisation
 library.add(
+  faAmazon,
   faAngleDoubleRight,
   faBomb,
+  faBootstrap,
   faClock,
   faCloud,
   faComments,
@@ -46,8 +53,11 @@ library.add(
   faFemale,
   faFolderOpen,
   faFile,
+  faHtml5,
   faLinkedin,
   faMoon,
+  faReact,
+  faTerminal,
   faTwitter,
   faUser,
   faUsers,

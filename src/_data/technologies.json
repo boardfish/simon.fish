@@ -1,0 +1,8 @@
+[
+  { "icon": "gem", "text": "Ruby on Rails" },
+  { "icon": ["fab", "react"], "text": "React" },
+  { "icon": ["fab", "bootstrap"], "text": "Bootstrap 4" },
+  { "icon": ["fab", "html5"], "text": "HTML/CSS/JS" },
+  { "icon": "terminal", "text": "Shell scripting" },
+  { "icon": "comments", "text": "Alexa Skills Kit" }
+]
