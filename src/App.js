@@ -90,6 +90,14 @@ class App extends Component {
                     <FontAwesomeIcon fixedWidth icon="envelope" /> Contact Me
                   </NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink
+                    href={process.env.PUBLIC_URL + "/docs/CurriculumVitae.pdf"}
+                    className="text-light p-0"
+                  >
+                    <FontAwesomeIcon fixedWidth icon="file" /> CV/Resume
+                  </NavLink>
+                </NavItem>
               </Nav>
             </Col>
             <Col sm={9} md={10} className="bg-primary text-secondary">
