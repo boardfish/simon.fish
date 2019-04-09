@@ -24,12 +24,6 @@
     "text": "@boardfish_"
   },
   {
-    "link": "https://facebook.com/simonfish84",
-    "colorClass": "facebook",
-    "icon": {"prefix": "fab", "iconName": "facebook"},
-    "text": "simonfish84"
-  },
-  {
     "link": "https://monzo.me/simonfish",
     "colorClass": "monzo",
     "icon": {"prefix": "fas", "iconName": "credit-card"},
