@@ -3,7 +3,7 @@
     "author": "Andy Sykes",
     "authorRole": "formerly of Pera Technology",
     "icon": {"prefix": "fas", "iconName": "file"},
-    "link": "docs/PeraTechnologyReference.pdf",
+    "link": "process.env.PUBLIC_URL + docs/PeraTechnologyReference.pdf",
     "text": "Simon has an ability to take a **complex task** (both IT-related and non-IT) and not only turn it around extremely quickly, but also to apply a level of thought and **ingenuity** of someone **a number of years more experienced.** It's this level of **output and creativity** which made the decision to bring Simon back after a few months in his summer holiday extremely easy."
   },
   {

@@ -17,6 +17,7 @@ import Portfolio from "./_data/portfolio";
 import Logo from "./assets/images/LogoWhite.svg";
 import SocialLinkGroup from "./components/SocialLinkGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MobileNavbar from "./components/MobileNavbar";
 
 class App extends Component {
   state = { selectedCard: null };
@@ -52,6 +53,7 @@ class App extends Component {
   render() {
     return (
       <Container fluid>
+        <MobileNavbar />
         <Container>
           <Row>
             <Col sm={3} md={2} className="bg-dark text-light">
@@ -70,6 +72,7 @@ class App extends Component {
                   style={{ width: "10vw" }}
                 />
                 <h4>Simon Fish</h4>
+
                 <NavItem>
                   <NavLink href="#about" className="text-light p-0">
                     <FontAwesomeIcon fixedWidth icon="user" /> About
