@@ -10,7 +10,7 @@ export default (props: { link: string, colorClass: string, icon: object, forceSh
       rel="noopener noreferrer"
       className={`btn btn-${
         props.colorClass
-      } d-flex flex-row align-items-center`}
+      } d-flex flex-row align-items-center justify-content-center`}
     >
       <FontAwesomeIcon icon={findIconDefinition(props.icon as IconLookup)} fixedWidth />{" "}
       <span
