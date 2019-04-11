@@ -1,6 +1,6 @@
 import React from "react";
 import Testimonial from "./Testimonial";
-import Testimonials from "../_data/testimonials.json";
+import Testimonials from "../_data/testimonials";
 
 export default () => {
   return (
