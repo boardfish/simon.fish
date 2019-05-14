@@ -27,7 +27,7 @@ const Card = styled(
   flex: 1 0 250px;
 `;
 
-  const imageDiv = (image, altText) => {
+  const imageDiv = (image: string, altText: string) => {
     if (!image) { return }
     return (
       // <div className={this.props.active ? "col" : "col-12"}>
