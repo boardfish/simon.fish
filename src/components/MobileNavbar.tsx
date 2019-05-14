@@ -3,6 +3,7 @@ import { UncontrolledCollapse, Button } from 'reactstrap';
 import NavbarContents from '../_data/navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { findIconDefinition, IconLookup } from '@fortawesome/fontawesome-svg-core';
+import { faCaretSquareUp } from '@fortawesome/free-solid-svg-icons';
 
 export default () => {
   return (<div
@@ -17,7 +18,7 @@ export default () => {
         >
           <UncontrolledCollapse
             toggler="#navbarToggle"
-            className="bg-dark p-3 mb-1"
+            className="bg-dark text-secondary p-3 mb-1"
           >
             {
               NavbarContents.map(({href, icon, text}) => {
@@ -29,7 +30,7 @@ export default () => {
             }
           </UncontrolledCollapse>
           <Button color="danger" id="navbarToggle">
-            ===
+            <FontAwesomeIcon icon={faCaretSquareUp} />
           </Button>
         </div>)
 }

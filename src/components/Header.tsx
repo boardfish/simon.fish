@@ -1,12 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import { Card, CardBody } from "reactstrap";
 import ProfileImage from "../assets/images/profile.jpg";
 import Technologies from "../_data/technologies.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { findIconDefinition, IconLookup } from "@fortawesome/fontawesome-svg-core";
 
-class Header extends Component {
-  render() {
+export default () => {
     return (
       <Card
         className="text-center text-primary bg-secondary"
@@ -33,6 +32,3 @@ class Header extends Component {
       </Card>
     );
   }
-}
-
-export default Header;
