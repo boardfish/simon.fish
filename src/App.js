@@ -69,7 +69,7 @@ class App extends Component {
                   src={Logo}
                   alt="Pixelated fish logo"
                   className="mx-auto mb-3"
-                  style={{ width: "10vw" }}
+                  style={{ width: "10rem" }}
                 />
                 <h4>Simon Fish</h4>
 
