@@ -42,7 +42,7 @@ const Card = styled(
     );
   };
 
-  const renderTitle = (active, icon, name, date, tags, location) => {
+  const renderTitle = (active: boolean, icon: object, name: string, date: string, tags: [string], location: string) => {
     if (active) {
       return (
         <div className="card-title text-center">
@@ -76,7 +76,21 @@ const Card = styled(
     }
   };
 
-    export default (props) => { 
+    export default (props: { 
+      active: boolean, 
+      hidden: boolean, 
+      image: string,
+      altText: string,
+      link: string,
+      icon: { prefix: string, iconName: string },
+      location: string,
+      name: string,
+      description: string,
+      summary: string,
+      date: string, 
+      tags: [string],
+      onClick: Function 
+    }) => { 
       return (
       <Card
         pose={props.active ? "fullscreen" : "idle"}

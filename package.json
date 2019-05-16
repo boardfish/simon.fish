@@ -24,7 +24,7 @@
     "reactstrap": "^7.1.0",
     "styled-components": "^4.2.0",
     "tslint": "^5.15.0",
-    "typescript": "^3.4.1"
+    "typescript": "^3.5.0-dev.20190516"
   },
   "scripts": {
     "start": "react-scripts start",
