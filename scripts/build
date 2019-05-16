@@ -1,4 +1,3 @@
-tags=( "$@" )
 docker build -t "docker.hethi.cc/boardfish/simon.fish:latest" -f Dockerfile.production .
 for arg; do
   docker tag "docker.hethi.cc/boardfish/simon.fish:latest" "docker.hethi.cc/boardfish/simon.fish:$arg" 
