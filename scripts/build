@@ -1,0 +1,1 @@
+docker build -t boardfish/simon.fish -f Dockerfile.production .
