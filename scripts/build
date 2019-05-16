@@ -1,4 +1,6 @@
+echo "Building latest tag"
 docker build -t "docker.hethi.cc/boardfish/simon.fish:latest" -f Dockerfile.production .
 for arg; do
+  echo "Building $arg tag"
   docker tag "docker.hethi.cc/boardfish/simon.fish:latest" "docker.hethi.cc/boardfish/simon.fish:$arg" 
 done
