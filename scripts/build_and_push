@@ -1,2 +1,2 @@
-scripts/build
-scripts/push
+scripts/build $@
+scripts/push latest $@
