@@ -33,7 +33,8 @@ import {
   faFolderOpen,
   faComments,
   faTerminal,
-  faCreditCard
+  faCreditCard,
+  faServer
 } from "@fortawesome/free-solid-svg-icons";
 
 // FontAwesome icon library intialisation
@@ -59,6 +60,7 @@ library.add(
   faLinkedin,
   faMoon,
   faReact,
+  faServer,
   faTerminal,
   faTwitter,
   faUser,

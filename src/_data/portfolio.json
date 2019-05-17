@@ -153,16 +153,35 @@
       "name": "UKCloud",
       "location": "Farnborough",
       "icon": { "prefix": "fas", "iconName": "cloud" },
-      "project_name": "ID & Access Management",
-      "summary": "I am currently working in a Scrum development team, building a Rails API backed by Red Hat SSO.",
-      "date": "July 2018-present",
+      "project_name": "Year in Industry",
+      "summary": "I am currently working in a Scrum development team at a major UK cloud provider.",
+      "date": "July 2018-August 2019",
       "tags": [
             "Rails",
             "Docker",
             "docker-compose",
-            "Git"
+            "Git",
+            "Bash",
+            "Jenkins",
+            "PowerShell"
           ],
       "link": "https://ukcloud.com/",
-      "description": "For my Year in Industry, I am currently working at UKCloud. My development team and I have produced an identity and access management API that allows UKCloud's OpenShift customers to manage permissions of others in their company."
-    }
+      "description": "For my Year in Industry, I am currently working at UKCloud. My development team and I have produced an identity and access management API that allows UKCloud's OpenShift and OpenStack customers to manage permissions of others in their company. I'll write more on this at the end of my placement - stay tuned."
+    },
+    {
+        "name": "Personal Server",
+        "location": "Hosted with Vultr",
+        "icon": { "prefix": "fas", "iconName": "server" },
+        "project_name": "Own Your Platform!",
+        "summary": "In order to learn more about deployment and use less SaaS solutions, I'm working on my VPS.",
+        "date": "April 2019-present",
+        "tags": [
+              "Docker",
+              "docker-compose",
+              "Jenkins",
+              "Keycloak"
+            ],
+        "link": "https://simon.fish/",
+        "description": "I've chosen to invest time in my virtual private server. I'm using a variety of open-source alternatives to popular services, including Wekan over Trello and Keycloak over other OAuth options. My site is now being deployed via self-hosted CI - after I build and push an image, it's automatically deployed."
+      }
 ]
