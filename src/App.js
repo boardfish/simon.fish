@@ -18,6 +18,8 @@ import Logo from "./assets/images/LogoWhite.svg";
 import SocialLinkGroup from "./components/SocialLinkGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MobileNavbar from "./components/MobileNavbar";
+import Canvas from "./components/Canvas";
+import Pixels from "./components/Pixels";
 
 const renderPortfolio = (selectedCard, setSelectedCard) => {
   return Portfolio.map(portfolioItem => {
@@ -39,6 +41,26 @@ const renderPortfolio = (selectedCard, setSelectedCard) => {
   });
 };
 
+const coords = [
+  { y: -2, x: -1 },
+  { y: -2, x: 3 },
+  { y: -1, x: -2 },
+  { y: -1, x: -1 },
+  { y: -1, x: 0 },
+  { y: -1, x: 2 },
+  { y: 0, x: -3 },
+  { y: 0, x: -2 },
+  { y: 0, x: -1 },
+  { y: 0, x: 0 },
+  { y: 0, x: 1 },
+  { y: 1, x: -2 },
+  { y: 1, x: -1 },
+  { y: 1, x: 0 },
+  { y: 1, x: 2 },
+  { y: 2, x: -1 },
+  { y: 2, x: 3 }
+];
+
 export default () => {
   const [selectedCard, setSelectedCard] = useState(null);
   return (
@@ -55,12 +77,9 @@ export default () => {
                 top: 51
               }}
             >
-              <img
-                src={Logo}
-                alt="Pixelated fish logo"
-                className="mx-auto mb-3"
-                style={{ width: "10rem" }}
-              />
+              <Canvas height="6em">
+                <Pixels coords={coords} />
+              </Canvas>
               <h4>Simon Fish</h4>
 
               <NavItem>
