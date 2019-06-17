@@ -2,8 +2,8 @@ import React from "react";
 import { Box } from "react-zdog";
 import { Motion, spring } from "react-motion";
 
-export default props => {
-  return props.coords.map(coord => (
+export default coords => {
+  return coords.map(coord => (
     <Motion
       defaultStyle={{ x: 0, y: 0 }}
       style={{
@@ -11,8 +11,8 @@ export default props => {
         y: spring(coord.y, { stiffness: 15, damping: 6 })
       }}
     >
-      {props => (
-        <Box translate={props} color="white" stroke={0} backface="#000" />
+      {coords => (
+        <Box translate={coords} color="white" stroke={0} backface="#000" />
       )}
     </Motion>
   ));
