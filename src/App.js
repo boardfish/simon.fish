@@ -6,6 +6,7 @@ import {
   Nav,
   NavItem,
   NavLink,
+  TabContent,
   UncontrolledTooltip
 } from "reactstrap";
 import Header from "./components/Header";
@@ -20,25 +21,48 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MobileNavbar from "./components/MobileNavbar";
 import Canvas from "./components/Canvas";
 import Pixels from "./components/Pixels";
+import ListGroup from "reactstrap/lib/ListGroup";
+import PortfolioMenuItem from "./components/PortfolioMenuItem";
+import CardBody from "reactstrap/lib/CardBody";
+import Card from "reactstrap/lib/Card";
 
 const renderPortfolio = (selectedCard, setSelectedCard) => {
-  return Portfolio.map(portfolioItem => {
-    return (
-      <PortfolioItem
-        {...portfolioItem}
-        active={selectedCard === portfolioItem.project_name}
-        hidden={![null, portfolioItem.project_name].includes(selectedCard)}
-        onClick={() => {
-          setSelectedCard(
-            portfolioItem.project_name === selectedCard
-              ? null
-              : portfolioItem.project_name
-          );
-        }}
-        key={portfolioItem.project_name}
-      />
-    );
-  });
+  return (
+    <Row style={{ maxHeight: "70vh" }}>
+      <Col style={{ maxHeight: "76vh", overflowY: "scroll" }}>
+        <ListGroup style={{ overflowY: "scroll" }}>
+          {Portfolio.map((portfolioItem, key) => {
+            return (
+              <PortfolioMenuItem
+                key={key}
+                id={key}
+                name={portfolioItem.name}
+                setSelectedCard={setSelectedCard}
+              />
+            );
+          })}
+        </ListGroup>
+      </Col>
+      <Col style={{ maxHeight: "76vh", overflowY: "scroll" }}>
+        <TabContent activeTab={selectedCard}>
+          <Card className="bg-dark">
+            <CardBody>
+              {Portfolio.map((portfolioItem, index) => {
+                return (
+                  <PortfolioItem
+                    {...portfolioItem}
+                    key={index}
+                    id={index}
+                    active={selectedCard === index}
+                  />
+                );
+              })}
+            </CardBody>
+          </Card>
+        </TabContent>
+      </Col>
+    </Row>
+  );
 };
 
 const coords = [
@@ -62,7 +86,8 @@ const coords = [
 ];
 
 export default () => {
-  const [selectedCard, setSelectedCard] = useState(null);
+  const [selectedCard, setSelectedCard] = useState(0);
+  console.log(selectedCard);
   return (
     <Container fluid>
       <MobileNavbar />
@@ -131,16 +156,7 @@ export default () => {
                 <h2 className="sticky-top bg-dark p-2 rounded">
                   <FontAwesomeIcon icon="folder-open" /> Portfolio
                 </h2>
-                <div
-                  className="card-group"
-                  style={{
-                    flexWrap: "nowrap",
-                    overflowX: selectedCard === null ? "auto" : "hidden",
-                    overflowY: "hidden"
-                  }}
-                >
-                  {renderPortfolio(selectedCard, setSelectedCard)}
-                </div>
+                {renderPortfolio(selectedCard, setSelectedCard)}
                 <UncontrolledTooltip placement="left" target="portfolio">
                   Click on an item to learn more.
                 </UncontrolledTooltip>

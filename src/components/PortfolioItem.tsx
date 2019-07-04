@@ -1,31 +1,8 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import posed from "react-pose";
-import styled from "styled-components";
-import { tween } from "popmotion";
+import { Row, Col, ListGroupItem, TabContent, TabPane } from 'reactstrap'
 import ReactMarkdown from "react-markdown";
 import { IconLookup, findIconDefinition } from "@fortawesome/fontawesome-svg-core";
-
-const Card = styled(
-  posed.div({
-    idle: {
-      height: 600,
-      width: 500,
-      transition: (props: object) => tween({ ...props, duration: 250 }),
-      flip: true
-    },
-    fullscreen: {
-      height: "70em",
-      width: "100vw",
-      transition: (props: object) => tween({ ...props, duration: 600 }),
-      flip: true
-    }
-  })
-).attrs({ className: "card" })`
-  transition: all 0.4s ease-out, opacity 0.1s ease-out,
-    background-color 0.6s ease-out;
-  flex: 1 0 250px;
-`;
 
   const imageDiv = (image: string, altText: string) => {
     if (!image) { return }
@@ -36,7 +13,7 @@ const Card = styled(
         style={{ objectFit: "cover" }}
         src={require("../assets" + image)}
         alt={altText}
-        className="card-img-top"
+        className="pb-3"
       />
       // </div>
     );
@@ -45,7 +22,7 @@ const Card = styled(
   const renderTitle = (active: boolean, icon: object, name: string, date: string, tags: [string], location: string) => {
     if (active) {
       return (
-        <div className="card-title text-center">
+        <div className="text-center">
           <h4>
             <FontAwesomeIcon icon={findIconDefinition(icon as IconLookup)} />
             <br />{" "}
@@ -64,7 +41,7 @@ const Card = styled(
       );
     } else {
       return (
-        <div className="card-title">
+        <div>
           <h4>
             <FontAwesomeIcon icon={findIconDefinition(icon as IconLookup)} />{" "}
             <span dangerouslySetInnerHTML={{ __html: name }} />
@@ -85,31 +62,18 @@ const Card = styled(
       icon: { prefix: string, iconName: string },
       location: string,
       name: string,
+      project_name: string,
       description: string,
       summary: string,
       date: string, 
       tags: [string],
-      onClick: Function 
+      onClick: Function,
+      id: number
     }) => { 
+      console.log(props.id)
       return (
-      <Card
-        pose={props.active ? "fullscreen" : "idle"}
-        onClick={props.onClick}
-        style={
-          props.hidden
-            ? {
-                flex: 0,
-                opacity: 0
-                // whiteSpace: "nowrap"
-              }
-            : { minWidth: 250 }
-        }
-        className={
-          props.active ? "bg-dark text-light" : "bg-secondary text-primary"
-        }
-      >
+      <TabPane tabId={props.id} className={`flex-column justify-content-center ${props.active ? 'd-flex' : 'd-none'}`}>
         {imageDiv(props.image, props.altText)}
-        <div className="card-body d-flex flex-column justify-content-center">
           {renderTitle(props.active, props.icon, props.name, props.date, props.tags, props.location)}
           <div>
             <ReactMarkdown
@@ -120,8 +84,6 @@ const Card = styled(
               className="card-text"
             />
           </div>
-        </div>
-        <div className="card-footer">
           <a
             href={props.link}
             className="btn btn-primary w-100"
@@ -131,7 +93,6 @@ const Card = styled(
           >
             <FontAwesomeIcon icon="angle-double-right" /> More
           </a>
-        </div>
-      </Card>
+      </TabPane>
     );
   }
