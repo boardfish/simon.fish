@@ -77,7 +77,7 @@ export default () => {
                 top: 51
               }}
             >
-              <Canvas height="6em">
+              <Canvas>
                 <Pixels coords={coords} />
               </Canvas>
               <h4>Simon Fish</h4>

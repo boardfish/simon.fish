@@ -29,16 +29,14 @@ export default props => {
     z: -0.9 * TAU
   });
   return (
-    <div>
-      <Illustration
-        zoom={8}
-        rotate={coords}
-        style={{ height: props.height, paddingBottom: "1em" }}
-        {...props}
-      >
-        {buildPixelArt(boxCoords)}
-      </Illustration>
-    </div>
+    <Illustration
+      zoom={props.zoom || 18}
+      rotate={coords}
+      style={{ height: props.height || "6em" }}
+      {...props}
+    >
+      {buildPixelArt(boxCoords)}
+    </Illustration>
   );
 };
 
