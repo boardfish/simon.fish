@@ -68,7 +68,9 @@ import { IconLookup, findIconDefinition } from "@fortawesome/fontawesome-svg-cor
       date: string, 
       tags: [string],
       onClick: Function,
-      id: number
+      id: number,
+      focused: boolean,
+      focusCard: Function
     }) => { 
       console.log(props.id)
       return (
@@ -79,20 +81,26 @@ import { IconLookup, findIconDefinition } from "@fortawesome/fontawesome-svg-cor
             <ReactMarkdown
               escapeHtml={false}
               source={
-                props.active ? props.description : props.summary
+                props.focused ? props.description : props.summary
               }
               className="card-text"
             />
           </div>
-          <a
+          <div className="btn-group btn-group-justified">
+            <button onClick={() => { props.focusCard(true)}} className={`btn btn-secondary w-50 ${props.focused ? 'd-none' : 'd-block' }`}>
+              <FontAwesomeIcon icon="angle-double-right" /> Read More
+            </button>
+<a
             href={props.link}
-            className="btn btn-primary w-100"
+            className="btn btn-primary w-50"
             target="_blank"
             rel="noopener noreferrer"
             style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
           >
-            <FontAwesomeIcon icon="angle-double-right" /> More
+            <FontAwesomeIcon icon="angle-double-right" /> Check it out
           </a>
+          </div>
+          
       </TabPane>
     );
   }

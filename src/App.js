@@ -26,7 +26,7 @@ import PortfolioMenuItem from "./components/PortfolioMenuItem";
 import CardBody from "reactstrap/lib/CardBody";
 import Card from "reactstrap/lib/Card";
 
-const renderPortfolio = (selectedCard, setSelectedCard) => {
+const renderPortfolio = (selectedCardState, focusCardState) => {
   return (
     <Row style={{ maxHeight: "70vh" }}>
       <Col style={{ maxHeight: "76vh", overflowY: "scroll" }}>
@@ -37,23 +37,26 @@ const renderPortfolio = (selectedCard, setSelectedCard) => {
                 key={key}
                 id={key}
                 name={portfolioItem.name}
-                setSelectedCard={setSelectedCard}
+                setSelectedCard={selectedCardState[1]}
+                focusCard={focusCardState[1]}
               />
             );
           })}
         </ListGroup>
       </Col>
       <Col style={{ maxHeight: "76vh", overflowY: "scroll" }}>
-        <TabContent activeTab={selectedCard}>
-          <Card className="bg-dark">
-            <CardBody>
+        <TabContent activeTab={selectedCardState[0]}>
+          <Card className="bg-dark" style={{ minHeight: "76vh" }}>
+            <CardBody className="d-flex flex-column justify-content-center">
               {Portfolio.map((portfolioItem, index) => {
                 return (
                   <PortfolioItem
                     {...portfolioItem}
                     key={index}
                     id={index}
-                    active={selectedCard === index}
+                    active={selectedCardState[0] === index}
+                    focused={focusCardState[0]}
+                    focusCard={focusCardState[1]}
                   />
                 );
               })}
@@ -86,8 +89,8 @@ const coords = [
 ];
 
 export default () => {
-  const [selectedCard, setSelectedCard] = useState(0);
-  console.log(selectedCard);
+  const selectedCardState = useState(0);
+  const focusCardState = useState(true);
   return (
     <Container fluid>
       <MobileNavbar />
@@ -156,7 +159,7 @@ export default () => {
                 <h2 className="sticky-top bg-dark p-2 rounded">
                   <FontAwesomeIcon icon="folder-open" /> Portfolio
                 </h2>
-                {renderPortfolio(selectedCard, setSelectedCard)}
+                {renderPortfolio(selectedCardState, focusCardState)}
                 <UncontrolledTooltip placement="left" target="portfolio">
                   Click on an item to learn more.
                 </UncontrolledTooltip>
