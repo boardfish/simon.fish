@@ -6,8 +6,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-  TabContent,
-  UncontrolledTooltip
+  TabContent
 } from "reactstrap";
 import Header from "./components/Header";
 import TestimonialsSection from "./components/TestimonialsSection";
@@ -15,7 +14,6 @@ import About from "./components/About";
 import ContactMe from "./components/ContactMe";
 import PortfolioItem from "./components/PortfolioItem";
 import Portfolio from "./_data/portfolio";
-import Logo from "./assets/images/LogoWhite.svg";
 import SocialLinkGroup from "./components/SocialLinkGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MobileNavbar from "./components/MobileNavbar";
@@ -28,8 +26,8 @@ import Card from "reactstrap/lib/Card";
 
 const renderPortfolio = (selectedCardState, focusCardState) => {
   return (
-    <Row style={{ maxHeight: "70vh" }}>
-      <Col style={{ maxHeight: "76vh", overflowY: "scroll" }}>
+    <div className="d-flex flex-row w-100" style={{ maxHeight: "70vh" }}>
+      <div className="w-25" style={{ maxHeight: "76vh", overflowY: "scroll" }}>
         <ListGroup style={{ overflowY: "scroll" }}>
           {Portfolio.map((portfolioItem, key) => {
             return (
@@ -37,14 +35,15 @@ const renderPortfolio = (selectedCardState, focusCardState) => {
                 key={key}
                 id={key}
                 name={portfolioItem.name}
+                icon={portfolioItem.icon}
                 setSelectedCard={selectedCardState[1]}
                 focusCard={focusCardState[1]}
               />
             );
           })}
         </ListGroup>
-      </Col>
-      <Col style={{ maxHeight: "76vh", overflowY: "scroll" }}>
+      </div>
+      <div style={{ maxHeight: "76vh", overflowY: "scroll" }} className="w-75">
         <TabContent activeTab={selectedCardState[0]}>
           <Card className="bg-dark" style={{ minHeight: "76vh" }}>
             <CardBody className="d-flex flex-column justify-content-center">
@@ -63,8 +62,8 @@ const renderPortfolio = (selectedCardState, focusCardState) => {
             </CardBody>
           </Card>
         </TabContent>
-      </Col>
-    </Row>
+      </div>
+    </div>
   );
 };
 
@@ -155,14 +154,11 @@ export default () => {
                 <SocialLinkGroup />
               </section>
               <hr />
-              <section className="py-3 d-none d-md-flex" id="portfolio">
+              <section className="py-3 d-flex" id="portfolio">
                 <h2 className="sticky-top bg-dark p-2 rounded">
                   <FontAwesomeIcon icon="folder-open" /> Portfolio
                 </h2>
                 {renderPortfolio(selectedCardState, focusCardState)}
-                <UncontrolledTooltip placement="left" target="portfolio">
-                  Click on an item to learn more.
-                </UncontrolledTooltip>
               </section>
               <hr />
               <section className="py-3" id="testimonials">

@@ -23,7 +23,7 @@ const boxCoords = [
   { y: 2, x: 3 }
 ];
 export default props => {
-  const [coords, setCoords] = useState({
+  const [coords] = useState({
     x: -0.33 * TAU,
     y: -0.5 * TAU,
     z: -0.9 * TAU

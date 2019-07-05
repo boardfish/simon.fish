@@ -76,8 +76,8 @@ import { IconLookup, findIconDefinition } from "@fortawesome/fontawesome-svg-cor
       return (
       <TabPane tabId={props.id} className={`flex-column justify-content-center ${props.active ? 'd-flex' : 'd-none'}`}>
         {imageDiv(props.image, props.altText)}
-          {renderTitle(props.active, props.icon, props.name, props.date, props.tags, props.location)}
-          <div>
+          {renderTitle(props.focused, props.icon, props.name, props.date, props.tags, props.location)}
+          <div className={`${props.focused ? '' : 'd-none d-md-block'}`}>
             <ReactMarkdown
               escapeHtml={false}
               source={
@@ -86,13 +86,13 @@ import { IconLookup, findIconDefinition } from "@fortawesome/fontawesome-svg-cor
               className="card-text"
             />
           </div>
-          <div className="btn-group btn-group-justified">
-            <button onClick={() => { props.focusCard(true)}} className={`btn btn-secondary w-50 ${props.focused ? 'd-none' : 'd-block' }`}>
+          <div className="btn-group-vertical">
+            <button onClick={() => { props.focusCard(true)}} className={`btn btn-secondary ${props.focused ? 'd-none' : 'd-block' }`}>
               <FontAwesomeIcon icon="angle-double-right" /> Read More
             </button>
 <a
             href={props.link}
-            className="btn btn-primary w-50"
+            className="btn btn-primary"
             target="_blank"
             rel="noopener noreferrer"
             style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
