@@ -4,7 +4,7 @@ export default [
     authorRole: "Lead Software Engineer, UKCloud Ltd.",
     icon: { prefix: "fab", iconName: "linkedin" },
     link: "https://www.linkedin.com/in/boardfish/",
-    text: ""
+    text: "Simon is an extremely fast learner and a creative thinker, who has become a highly effective part of our dev team. As one example, he has gained very quickly a deep knowledge of Red Hat Single Sign-On, and his contributions to our work with it have been innovative and substantial. He’s able to respond constructively to feedback and to self-motivate, and he’s also integrated well socially with the wider group. His ability to make connections across teams, and to work well in a highly regulated engineering environment, mean that he will be missed when his year as an undergraduate developer with us comes to an end."
   },
   {
     author: "Pauline Narvas",

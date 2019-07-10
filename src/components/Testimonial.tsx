@@ -6,7 +6,7 @@ import { findIconDefinition, IconLookup } from "@fortawesome/fontawesome-svg-cor
 
 export default (props: { text: string, author: string, authorRole: string, link: string, icon: object}) => {
   return (
-    <Card className="bg-secondary text-primary">
+    <Card className="bg-secondary text-primary mb-3">
       <CardBody className="d-flex flex-column justify-content-center">
         <blockquote className="blockquote text-center">
           <ReactMarkdown

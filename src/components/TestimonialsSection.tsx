@@ -6,8 +6,7 @@ export default () => {
   return (
     <div>
       <div
-        className={Testimonials.length <= 3 ? "card-deck" : "card-columns"}
-        style={{ columnCount: Testimonials.length % 2 === 0 ? 2 : 3 }}
+        className="d-flex flex-column"
       >
         {Testimonials.map(testimonial => {
           return <Testimonial {...testimonial} />;
