@@ -20,7 +20,7 @@ export default [
     text: "Contact Me"
   },
   {
-    href: process.env.PUBLIC_URL + "/docs/CurriculumVitae.pdf",
+    href: "https://cv.simon.fish",
     icon: { prefix: "fas", iconName: "file" },
     text: "CV/Resume"
   }

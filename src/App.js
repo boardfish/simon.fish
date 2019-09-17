@@ -131,7 +131,7 @@ export default () => {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href={process.env.PUBLIC_URL + "/docs/CurriculumVitae.pdf"}
+                  href="https://cv.simon.fish"
                   className="text-light p-0"
                 >
                   <FontAwesomeIcon fixedWidth icon="file" /> CV/Resume
