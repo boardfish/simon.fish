@@ -22,6 +22,7 @@ export default [
   {
     href: "https://cv.simon.fish",
     icon: { prefix: "fas", iconName: "file" },
-    text: "CV/Resume"
+    text: "CV/Resume",
+    beta: true
   }
 ];

@@ -23,6 +23,8 @@ import ListGroup from "reactstrap/lib/ListGroup";
 import PortfolioMenuItem from "./components/PortfolioMenuItem";
 import CardBody from "reactstrap/lib/CardBody";
 import Card from "reactstrap/lib/Card";
+import { findIconDefinition } from "@fortawesome/fontawesome-svg-core";
+import NavbarContents from "./_data/navbar";
 
 const renderPortfolio = (selectedCardState, focusCardState) => {
   return (
@@ -109,34 +111,24 @@ export default () => {
               </Canvas>
               <h4>Simon Fish</h4>
 
-              <NavItem>
-                <NavLink href="#about" className="text-light p-0">
-                  <FontAwesomeIcon fixedWidth icon="user" /> About
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#portfolio" className="text-light p-0">
-                  <FontAwesomeIcon fixedWidth icon="folder-open" /> Portfolio
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#testimonials" className="text-light p-0">
-                  <FontAwesomeIcon fixedWidth icon="comments" /> Testimonials
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#contact-me" className="text-light p-0">
-                  <FontAwesomeIcon fixedWidth icon="envelope" /> Contact Me
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://cv.simon.fish"
-                  className="text-light p-0"
-                >
-                  <FontAwesomeIcon fixedWidth icon="file" /> CV/Resume
-                </NavLink>
-              </NavItem>
+              {NavbarContents.map(({ href, icon, text, beta }) => {
+                return (
+                  <NavItem>
+                    <NavLink href={href} className="text-light p-0">
+                      <FontAwesomeIcon
+                        fixedWidth
+                        icon={findIconDefinition(icon)}
+                      />{" "}
+                      {text}
+                      {beta ? (
+                        <span className="badge badge-primary ml-1">BETA</span>
+                      ) : (
+                        ""
+                      )}
+                    </NavLink>
+                  </NavItem>
+                );
+              })}
             </Nav>
           </Col>
           <Col sm={9} md={10} className="bg-primary text-secondary">

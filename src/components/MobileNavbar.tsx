@@ -18,13 +18,14 @@ export default () => {
         >
           <UncontrolledCollapse
             toggler="#navbarToggle"
-            className="bg-dark text-secondary p-3 mb-1"
+            className="bg-dark p-3 mb-1"
           >
             {
-              NavbarContents.map(({href, icon, text}) => {
-                return <a href={href}>
+              NavbarContents.map(({href, icon, text, beta}) => {
+                return <a href={href} className="text-secondary">
                 <FontAwesomeIcon icon={findIconDefinition(icon as IconLookup)} fixedWidth />{" "}
                 {text}
+                {beta ? <span className="badge badge-primary ml-1">BETA</span> : ''}
                 <br/></a>
               })
             }
