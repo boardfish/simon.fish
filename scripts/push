@@ -1,3 +1,3 @@
 for arg; do
-  docker push "docker.hethi.cc/boardfish/simon.fish:$arg"
+  docker push "boardfish/simon.fish:$arg"
 done
