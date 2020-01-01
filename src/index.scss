@@ -56,5 +56,6 @@ body::-webkit-scrollbar-thumb {
   transition: 0.2s background-color;
   &:hover, .selected {
     background-color: darken($color: $primary, $amount: 5%) !important;
+    cursor: pointer;
   }
 }
