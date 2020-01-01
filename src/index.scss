@@ -51,3 +51,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 2.5em;
   border: 3px solid var(--scrollbarBG);
 }
+
+.portfolio-menu-item {
+  transition: 0.2s background-color;
+  &:hover, .selected {
+    background-color: darken($color: $primary, $amount: 5%) !important;
+  }
+}

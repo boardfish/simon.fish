@@ -10,8 +10,8 @@ import TabContent from "reactstrap/lib/TabContent";
 export default (selectedCardState, focusCardState) => {
   return (
     <div className="row rounded mr-0" style={{minHeight: "76vh", maxHeight: "76vh"}}>
-      <div className="col-3 pr-0" style={{ overflowY: "scroll", minHeight: "inherit", maxHeight: "inherit" }}>
-        <ListGroup style={{ minHeight: "inherit" }} className="d-flex flex-column w-100">
+      <div className="col-3 rounded bg-dark pr-0" style={{ overflowY: "scroll", minHeight: "inherit", maxHeight: "inherit" }}>
+        <ListGroup style={{ minHeight: "inherit" }} className="mt-3 pr-3 d-flex flex-column w-100">
           {Portfolio.map((portfolioItem, key) => {
             return (
               <PortfolioMenuItem
