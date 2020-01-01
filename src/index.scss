@@ -41,15 +41,15 @@ body::-webkit-scrollbar {
 }
 body {
   scrollbar-width: thin;
-  scrollbar-color: var(--primary) var(--dark);
+  scrollbar-color: darken($color: $primary, $amount: 5%) var(--dark);
 }
 body::-webkit-scrollbar-track {
-  background: var(--scrollbarBG);
+  background: darken($color: $primary, $amount: 5%);
 }
 body::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG) ;
   border-radius: 2.5em;
-  border: 3px solid var(--scrollbarBG);
+  border: 3px solid darken($color: $primary, $amount: 5%);
 }
 
 .portfolio-menu-item {
