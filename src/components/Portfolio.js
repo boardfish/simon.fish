@@ -9,9 +9,9 @@ import TabContent from "reactstrap/lib/TabContent";
 
 export default (selectedCardState, focusCardState) => {
   return (
-    <div className="w-100 row" style={{minHeight: "76vh", maxHeight: "76vh"}}>
-      <div className="col-3" style={{ overflowY: "scroll", minHeight: "inherit", maxHeight: "inherit" }}>
-        <ListGroup style={{ overflowY: "scroll", minHeight: "inherit" }} className="d-flex flex-column">
+    <div className="row rounded mr-0" style={{minHeight: "76vh", maxHeight: "76vh"}}>
+      <div className="col-3 pr-0" style={{ overflowY: "scroll", minHeight: "inherit", maxHeight: "inherit" }}>
+        <ListGroup style={{ minHeight: "inherit" }} className="d-flex flex-column w-100">
           {Portfolio.map((portfolioItem, key) => {
             return (
               <PortfolioMenuItem
@@ -26,7 +26,7 @@ export default (selectedCardState, focusCardState) => {
           })}
         </ListGroup>
       </div>
-      <TabContent className="col-9" activeTab={selectedCardState[0]} style={{overflowY: "scroll", minHeight: "inherit", maxHeight: "inherit"}}>
+      <TabContent className="col-9 px-0" activeTab={selectedCardState[0]} style={{overflowY: "scroll", minHeight: "inherit", maxHeight: "inherit"}}>
         <Card className="bg-dark" style={{minHeight: "inherit"}}>
           <CardBody className="d-flex flex-column justify-content-center">
             {Portfolio.map((portfolioItem, index) => {

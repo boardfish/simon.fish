@@ -36,6 +36,18 @@ section {
   justify-content: center;
 }
 
-html {
-  scroll-behavior: smooth;
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--dark);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 2.5em;
+  border: 3px solid var(--scrollbarBG);
 }
