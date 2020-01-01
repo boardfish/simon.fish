@@ -36,6 +36,25 @@ section {
   justify-content: center;
 }
 
-html {
-  scroll-behavior: smooth;
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: darken($color: $primary, $amount: 5%) var(--dark);
+}
+body::-webkit-scrollbar-track {
+  background: darken($color: $primary, $amount: 5%);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 2.5em;
+  border: 3px solid darken($color: $primary, $amount: 5%);
+}
+
+.portfolio-menu-item {
+  transition: 0.2s background-color;
+  &:hover, .selected {
+    background-color: darken($color: $primary, $amount: 5%) !important;
+  }
 }
