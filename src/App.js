@@ -6,68 +6,19 @@ import {
   Nav,
   NavItem,
   NavLink,
-  TabContent
 } from "reactstrap";
 import Header from "./components/Header";
 import TestimonialsSection from "./components/TestimonialsSection";
 import About from "./components/About";
 import ContactMe from "./components/ContactMe";
-import PortfolioItem from "./components/PortfolioItem";
-import Portfolio from "./_data/portfolio";
 import SocialLinkGroup from "./components/SocialLinkGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MobileNavbar from "./components/MobileNavbar";
 import Canvas from "./components/Canvas";
 import Pixels from "./components/Pixels";
-import ListGroup from "reactstrap/lib/ListGroup";
-import PortfolioMenuItem from "./components/PortfolioMenuItem";
-import CardBody from "reactstrap/lib/CardBody";
-import Card from "reactstrap/lib/Card";
 import { findIconDefinition } from "@fortawesome/fontawesome-svg-core";
 import NavbarContents from "./_data/navbar";
-
-const renderPortfolio = (selectedCardState, focusCardState) => {
-  return (
-    <div className="d-flex flex-row w-100" style={{ maxHeight: "70vh" }}>
-      <div className="w-25" style={{ maxHeight: "76vh", overflowY: "scroll" }}>
-        <ListGroup style={{ overflowY: "scroll" }}>
-          {Portfolio.map((portfolioItem, key) => {
-            return (
-              <PortfolioMenuItem
-                key={key}
-                id={key}
-                name={portfolioItem.name}
-                icon={portfolioItem.icon}
-                setSelectedCard={selectedCardState[1]}
-                focusCard={focusCardState[1]}
-              />
-            );
-          })}
-        </ListGroup>
-      </div>
-      <div style={{ maxHeight: "76vh", overflowY: "scroll" }} className="w-75">
-        <TabContent activeTab={selectedCardState[0]}>
-          <Card className="bg-dark" style={{ minHeight: "76vh" }}>
-            <CardBody className="d-flex flex-column justify-content-center">
-              {Portfolio.map((portfolioItem, index) => {
-                return (
-                  <PortfolioItem
-                    {...portfolioItem}
-                    key={index}
-                    id={index}
-                    active={selectedCardState[0] === index}
-                    focused={focusCardState[0]}
-                    focusCard={focusCardState[1]}
-                  />
-                );
-              })}
-            </CardBody>
-          </Card>
-        </TabContent>
-      </div>
-    </div>
-  );
-};
+import Portfolio from './components/Portfolio';
 
 const coords = [
   { y: -2, x: -1 },
@@ -150,7 +101,7 @@ export default () => {
                 <h2 className="sticky-top bg-dark p-2 rounded">
                   <FontAwesomeIcon icon="folder-open" /> Portfolio
                 </h2>
-                {renderPortfolio(selectedCardState, focusCardState)}
+                {Portfolio(selectedCardState, focusCardState)}
               </section>
               <hr />
               <section className="py-3" id="testimonials">

@@ -3,7 +3,7 @@ import ListGroupItem from 'reactstrap/lib/ListGroupItem';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconLookup, findIconDefinition } from "@fortawesome/fontawesome-svg-core";
 
-export default (props: { name: string, id: string, icon: object, setSelectedCard: Function, focusCard: Function }) => { 
+export default (props: { name: string, id: number, icon: object, setSelectedCard: Function, focusCard: Function }) => { 
   return <ListGroupItem className="bg-dark text-right" onMouseEnter={() => { props.setSelectedCard(props.id)
     props.focusCard(false)
   }} onClick={() => { 
