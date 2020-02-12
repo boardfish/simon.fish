@@ -34,7 +34,8 @@ import {
   faComments,
   faTerminal,
   faCreditCard,
-  faServer
+  faServer,
+  faMobileAlt
 } from "@fortawesome/free-solid-svg-icons";
 
 // FontAwesome icon library intialisation
@@ -59,6 +60,7 @@ library.add(
   faHtml5,
   faLinkedin,
   faMoon,
+  faMobileAlt,
   faReact,
   faServer,
   faTerminal,
