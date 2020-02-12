@@ -14,7 +14,6 @@ export default () => {
         technologies such as Rails and React, and I like to apply myself to
         personal projects to refine my skills.
       </p>
-      <Canvas height="12em" zoom={29} />
     </div>
   );
 };

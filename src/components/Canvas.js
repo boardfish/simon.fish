@@ -32,7 +32,8 @@ export default props => {
     <Illustration
       zoom={props.zoom || 18}
       rotate={coords}
-      style={{ height: props.height || "6em" }}
+      style={{ height: props.height || "9em" }}
+      dragRotate={true}
       {...props}
     >
       {buildPixelArt(boxCoords)}
