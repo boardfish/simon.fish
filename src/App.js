@@ -44,11 +44,11 @@ export default () => {
   const selectedCardState = useState(0);
   const focusCardState = useState(true);
   return (
-    <Container fluid>
+    <div>
       <MobileNavbar />
       <Container>
         <Row>
-          <Col sm={3} md={2} className="bg-dark text-light">
+          <Col sm={3} lg={2} className="bg-dark text-light">
             <Nav
               id="navbar"
               className="text-light flex-column"
@@ -82,7 +82,7 @@ export default () => {
               })}
             </Nav>
           </Col>
-          <Col sm={9} md={10} className="bg-primary text-secondary">
+          <Col sm={9} lg={10} className="bg-primary text-secondary">
             <main className="container">
               <section className="py-3" id="about">
                 <div className="row pb-md-3">
@@ -121,6 +121,6 @@ export default () => {
           </Col>
         </Row>
       </Container>
-    </Container>
+    </div>
   );
 };
