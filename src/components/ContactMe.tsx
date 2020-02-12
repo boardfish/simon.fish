@@ -3,7 +3,7 @@ import SocialLinkGroup from "./SocialLinkGroup";
 
 export default () => {
   return (
-    <div className="d-flex flex-column flex-md-row align-items-center">
+    <div className="d-flex flex-column align-items-center" style={{minHeight: "75vh"}}>
       <p className="text-justify px-3 ">
         If you've taken an interest in what you see here, I look forward to you
         contacting me personally via any of the following means. Or, if you're
@@ -15,7 +15,7 @@ export default () => {
         Any and all donations received by way of this site will go towards
         development tools, my university education, and other suitable outlets.
       </p>
-      <SocialLinkGroup vertical />
+      <SocialLinkGroup vertical={false} />
     </div>
   );
 };

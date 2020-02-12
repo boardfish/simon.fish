@@ -1,5 +1,32 @@
 [
   {
+    "name": "Key Projects",
+    "projects": [
+      {
+        "name": "UKCloud",
+        "location": "Farnborough",
+        "icon": {
+          "prefix": "fas",
+          "iconName": "cloud"
+        },
+        "project_name": "Year in Industry",
+        "summary": "I was part of a Scrum development team at a major UK cloud provider.",
+        "date": "July 2018-August 2019",
+        "tags": [
+          "Rails",
+          "Docker",
+          "docker-compose",
+          "Git",
+          "Bash",
+          "Jenkins",
+          "PowerShell"
+        ],
+        "link": "https://ukcloud.com/",
+        "description": "For my Year in Industry, I worked at UKCloud. My development team and I produced an identity and access management API that allows UKCloud's OpenShift and OpenStack customers to manage permissions of others in their company. I'll be writing more about this here soon, but for now, please check out my [CV](https://cv.simon.fish)."
+      }
+    ]
+  },
+  {
     "name": "Hackathons",
     "projects": [
       {
@@ -165,7 +192,7 @@
           "Public Speaking"
         ],
         "link": "https://www.codefirstgirls.org.uk/",
-        "description": "During the second semester of my second year, I volunteered on both Code First: Girls courses at the University of Sheffield. Due to how the courses were federated, I was tasked with improving and supporting many existing resources from CF:G and adapting ones we used locally. I was part of two very strong teams and aided by excellent instructors. It was necessary to adapt to the level at which the two groups worked, making the courses good proving grounds for my teaching skills.\nThe courses began around the time of the release of a new version of Bootstrap, a session which I chose to take the lead on. The framework turned out to be a stumbling block, but in the end my efforts to explain it resulted in a number of very strong projects. As a judge, I was highly impressed - some carried a design ethic that came off as incredibly professional. I feel incredibly proud to have assisted the students of the course and helped to support such an incredible community."
+        "description": "During the second semester of my second year, I volunteered on both Code First: Girls courses at the University of Sheffield. Due to how the courses were federated, I was tasked with improving and supporting many existing resources from CF:G and adapting ones we used locally. I was part of two very strong teams and aided by excellent instructors. It was necessary to adapt to the level at which the two groups worked, making the courses good proving grounds for my teaching skills.\n\nThe courses began around the time of the release of a new version of Bootstrap, a session which I chose to take the lead on. The framework turned out to be a stumbling block for some of the class, but in the end my explanation and support in the lesson resulted in a number of very strong projects. As a judge, I was highly impressed - some carried a design ethic that came off as incredibly professional. I feel incredibly proud to have assisted the students of the course and helped to support such an incredible community."
       },
       {
         "name": "Nintendo Event",
@@ -190,45 +217,17 @@
     "name": "In Action",
     "projects": [
       {
-        "name": "UKCloud",
-        "location": "Farnborough",
-        "icon": {
-          "prefix": "fas",
-          "iconName": "cloud"
-        },
-        "project_name": "Year in Industry",
-        "summary": "I was part of a Scrum development team at a major UK cloud provider.",
-        "date": "July 2018-August 2019",
-        "tags": [
-          "Rails",
-          "Docker",
-          "docker-compose",
-          "Git",
-          "Bash",
-          "Jenkins",
-          "PowerShell"
-        ],
-        "link": "https://ukcloud.com/",
-        "description": "For my Year in Industry, I worked at UKCloud. My development team and I produced an identity and access management API that allows UKCloud's OpenShift and OpenStack customers to manage permissions of others in their company. I'll be writing more about this here soon, but for now, please check out my [CV](https://cv.simon.fish)."
-      },
-      {
-        "name": "Personal Server",
-        "location": "Hosted with Scaleway",
+        "name": "Tech Stack",
+        "location": "Netlify",
         "icon": {
           "prefix": "fas",
           "iconName": "server"
         },
-        "project_name": "Own Your Platform!",
-        "summary": "In order to learn more about deployment and use less SaaS solutions, I'm working on my VPS.",
+        "project_name": "Personal website",
+        "summary": "I'm hosting this site with Netlify, but I've previously explored and hosted with Docker and Kubernetes.",
         "date": "April 2019-present",
-        "tags": [
-          "Docker",
-          "docker-compose",
-          "Jenkins",
-          "Keycloak"
-        ],
-        "link": "https://simon.fish/",
-        "description": "I've chosen to invest time in my virtual private server. I'm using a variety of open-source alternatives to popular services, including Wekan over Trello and Keycloak over other OAuth options. I experimented with using Kubernetes to do this, but ran into some issues. I'm now sticking with Docker as it's a domain I have much better knowledge of and control over. Currently, I'm in the process of rebuilding a lot of it from scratch."
+        "tags": ["Netlify", "JAM Stack"],
+        "description": "In the past, I've chosen to invest time in my virtual private server. For almost two years, I relied on a variety of open-source alternatives to popular services, including Wekan over Trello and Keycloak over other OAuth options. I also experimented with using Kubernetes to do this, but ran into some issues. Docker became a domain I had much better knowledge of and control over. Though in principle I strongly believe in owning your platform, I'm now hosting with Netlify to save myself from firefighting over the course of the year."
       }
     ]
   }
