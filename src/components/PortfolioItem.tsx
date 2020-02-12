@@ -90,15 +90,17 @@ import { IconLookup, findIconDefinition } from "@fortawesome/fontawesome-svg-cor
             <button onClick={() => { props.focusCard(true)}} className={`btn btn-secondary ${props.focused ? 'd-none' : 'd-block' }`}>
               <FontAwesomeIcon icon="angle-double-right" /> Read More
             </button>
-<a
-            href={props.link}
-            className="btn btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
-          >
-            <FontAwesomeIcon icon="angle-double-right" /> Check it out
-          </a>
+          {props.link ?
+            <a
+              href={props.link}
+              className="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
+            >
+              <FontAwesomeIcon icon="angle-double-right" /> Check it out
+            </a> : ""
+          }
           </div>
           
       </TabPane>
