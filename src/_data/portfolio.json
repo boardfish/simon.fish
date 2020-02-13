@@ -303,6 +303,7 @@
       {
         "name": "Come Together Generator",
         "location": "Twitter",
+        "link": "https://github.com/boardfish/come-together",
         "icon": {
           "prefix": "fas",
           "iconName": "compact-disc"
