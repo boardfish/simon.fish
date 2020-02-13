@@ -11,11 +11,11 @@ import ListGroupItemHeading from "reactstrap/lib/ListGroupItemHeading";
 export default (selectedCardState, focusCardState) => {
   return (
     <div className="row rounded mx-0" style={{minHeight: "76vh", maxHeight: "76vh"}}>
-      <div className="col-3 rounded bg-dark pr-0" style={{ overflowY: "scroll", minHeight: "inherit", maxHeight: "inherit" }}>
-        <ListGroup style={{ minHeight: "inherit" }} className="mt-3 pr-3 pb-3 d-flex flex-column w-100">
+      <div className="col-3 rounded bg-dark p-2" style={{ overflowY: "scroll", minHeight: "inherit", maxHeight: "inherit" }}>
+        <ListGroup style={{ minHeight: "inherit" }} className="mt-1 pr-0 pb-3 mr-0 d-flex flex-column w-100">
           {Portfolio.map((group, groupIndex) => (
-            <div className="portfolio-menu-group">
-              <ListGroupItemHeading className="mt-2" style={{whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis'}} title={group.name}>{group.name}</ListGroupItemHeading>
+            <div className={`portfolio-menu-group rounded ${groupIndex === 0 ? "bg-warning text-dark" : "bg-dark"}`}>
+              <ListGroupItemHeading className="mt-2 text-center" style={{whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis'}} title={group.name}>{group.name}</ListGroupItemHeading>
               {group.projects.map((portfolioItem, index) => (
                 <PortfolioMenuItem
                   key={`${groupIndex}-${index}`}
@@ -24,6 +24,7 @@ export default (selectedCardState, focusCardState) => {
                   icon={portfolioItem.icon}
                   setSelectedCard={selectedCardState[1]}
                   focusCard={focusCardState[1]}
+                  className={groupIndex === 0 ? "bg-warning text-dark" : "bg-dark"}
                 />
               ))}
             </div>
