@@ -37,6 +37,7 @@ import {
   faServer,
   faMobileAlt,
   faCompactDisc,
+  faRobot,
   faFunnelDollar
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -61,11 +62,13 @@ library.add(
   faFemale,
   faFolderOpen,
   faFile,
+  faFunnelDollar,
   faHtml5,
   faLinkedin,
   faMoon,
   faMobileAlt,
   faReact,
+  faRobot,
   faServer,
   faTerminal,
   faTwitter,

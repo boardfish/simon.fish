@@ -59,3 +59,24 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
   }
 }
+
+.tab-pane.active {
+  animation-duration: 0.3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    margin-top: 100%;
+    width: 100%;
+    overflow-y: hidden;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0%;
+    width: 100%;
+    overflow-y: scroll;
+  }
+}
