@@ -43,6 +43,26 @@
           "Amazon Alexa"
         ],
         "description": "One of my modules took a deep dive into the Internet of Things, which primarily uses cheap microcontrollers and machine code to save on cost and power. My lecturer for the module had developed the unPhone device, which took an ESP32 microcontroller and mixed in plenty of extra features such as buttons, a touch screen, and a LiPo battery. Students on the course were given free rein over what they would work on as their final project, provided it was suitably complex.\n\nAt the start of the year, I'd gotten into a good sleeping routine with the help of [sleepyti.me](https://sleepyti.me). The site tells you when to set your alarm based on what time it is currently, factoring in the time it takes the average human to get to sleep and the length of one sleep cycle. I always thought that wrapping this in web technology was slow and unresponsive. Even then, the times it gave back could not be used to directly set an alarm on your device. For this reason, I thought the unPhone would be perfect for the job.\n\nMy final product was the Snooze Clock, which allows users to use the buttons to set alarms for relative times in the future. Additionally, it was capable of being updated over the air and being configured to connect to a WiFi network in order to retrieve the time over NTP."
+      },
+      {
+        "name": "Finance app",
+        "icon": {
+          "prefix": "fas",
+          "iconName": "funnel-dollar"
+        },
+        "image": "/images/portfolio/zodiac.png",
+        "project_name": "Zodiac",
+        "location": "Monzo",
+        "summary": "I developed an online finance app for Monzo users.",
+        "date": "March 2019-June 2019",
+        "tags": [
+          "React",
+          "Monzo",
+          "JS",
+          "Axios",
+          "Ruby on Rails"
+        ],
+        "description": ""
       }
     ]
   },
@@ -234,7 +254,7 @@
     ]
   },
   {
-    "name": "In Action",
+    "name": "Personal",
     "projects": [
       {
         "name": "Tech Stack",
@@ -248,6 +268,19 @@
         "date": "April 2019-present",
         "tags": ["Netlify", "JAM Stack"],
         "description": "In the past, I've chosen to invest time in my virtual private server. For almost two years, I relied on a variety of open-source alternatives to popular services, including Wekan over Trello and Keycloak over other OAuth options. I also experimented with using Kubernetes to do this, but ran into some issues. Docker became a domain I had much better knowledge of and control over. Though in principle I strongly believe in owning your platform, I'm now hosting with Netlify to save myself from firefighting over the course of the year."
+      },
+      {
+        "name": "Come Together Generator",
+        "location": "Twitter",
+        "icon": {
+          "prefix": "fas",
+          "iconName": "compact-disc"
+        },
+        "project_name": "RightNow0verMe",
+        "summary": "I built a bot to generate random verses for the song 'Come Together'.",
+        "date": "December 2019",
+        "tags": ["Twitter", "Python", "Twython", "pronouncing"],
+        "description": "I developed [@RightNow0verMe](https://twitter.com/RightNow0verMe), a Twitter bot dedicated to coming up with random verses for the song 'Come Together'.\n\nIts output is admittedly a little untamed, being a random jumble of words that fits the meter of any line from a verse in the original song. However, it's always fun to see the odd phrase it spits out, and its chaotic nature is right in keeping with other bots that inspire it."
       }
     ]
   }
