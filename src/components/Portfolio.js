@@ -15,7 +15,7 @@ export default (selectedCardState, focusCardState) => {
         <ListGroup style={{ minHeight: "inherit" }} className="mt-3 pr-3 pb-3 d-flex flex-column w-100">
           {Portfolio.map((group, groupIndex) => (
             <div className="portfolio-menu-group">
-              <ListGroupItemHeading className="mt-2">{group.name}</ListGroupItemHeading>
+              <ListGroupItemHeading className="mt-2" style={{whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis'}} title={group.name}>{group.name}</ListGroupItemHeading>
               {group.projects.map((portfolioItem, index) => (
                 <PortfolioMenuItem
                   key={`${groupIndex}-${index}`}
