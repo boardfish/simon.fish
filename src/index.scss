@@ -76,3 +76,9 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(0);
   }
 }
+
+@include media-breakpoint-up(md) {
+  .small-md {
+    font-size: $small-font-size;
+  }
+}

@@ -1,6 +1,10 @@
 [
   {
     "name": "Key Projects",
+    "icon": {
+      "prefix": "fas",
+      "iconName": "star"
+    },
     "projects": [
       {
         "name": "UKCloud",
@@ -104,6 +108,10 @@
   },
   {
     "name": "Hackathons",
+    "icon": {
+      "prefix": "fas",
+      "iconName": "terminal"
+    },
     "projects": [
       {
         "name": "Great<wbr>Uni<wbr>Hack",
@@ -228,6 +236,10 @@
   },
   {
     "name": "Interpersonal",
+    "icon": {
+      "prefix": "fas",
+      "iconName": "users"
+    },
     "projects": [
       {
         "name": "Code First Girls Sheffield",
@@ -270,6 +282,10 @@
   },
   {
     "name": "Personal",
+    "icon": {
+      "prefix": "fas",
+      "iconName": "fish"
+    },
     "projects": [
       {
         "name": "Tech Stack",
