@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconLookup, findIconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 export default (props: { name: string, className: string, id: number, icon: object, setSelectedCard: Function, focusCard: Function }) => { 
-  return <ListGroupItem className={`text-right portfolio-menu-item d-flex flex-row align-items-center ${props.className}`} onMouseEnter={() => { props.setSelectedCard(props.id)
+  return <ListGroupItem className={`mx-2 text-right bg-transparent portfolio-menu-item d-flex flex-row align-items-center ${props.className}`} onMouseEnter={() => { props.setSelectedCard(props.id)
     props.focusCard(false)
   }} onClick={() => { 
     props.focusCard(true)}}>
