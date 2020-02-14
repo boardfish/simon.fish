@@ -126,7 +126,7 @@
         "tags": [
           "Public Speaking"
         ],
-        "link": "https://github.com/boardfish/",
+        "link": "https://github.com/boardfish?utf8=✓&tab=repositories&q=topic%3Acom3550",
         "description": "I needed to interview to apply for this module. I understood that I would be representing the University in being deployed to a local school, and would support and deliver teaching there. This required a DBS check and workshops on safeguarding.\n\nSo far, it has entailed observation and work on a special project that I will deliver. Owing to Git's foundation as a widely applicable tool for collaboration and solo work alike, I intend to bring this to a class of Year 12 students as a skill.\n\nMy plan over the next nine weeks, as of writing this, will be to build rapport with classes I'm working with and go on to teach lessons on data structures. Eventually, I'll be able to apply my special project, which will allow the class to work against a CI server with Git."
       },
       {
@@ -136,13 +136,13 @@
           "prefix": "fas",
           "iconName": "lock-open"
         },
-        "project_name": "Escape Room ???",
+        "project_name": "Escape Room Tools",
         "summary": "I am building a tool to assist escape room owners in running their business.",
         "date": null,
         "tags": [
           "foo"
         ],
-        "link": "https://github.com/boardfish/",
+        "link": "https://github.com/boardfish?utf8=✓&tab=repositories&q=topic%3Acom3610",
         "description": "For my dissertation, I initially seeked to integrate a distributed system with an escape room for various purposes. Escape rooms are inherently very physical experiences, but I believe that well-tested technology could enhance the experience in various ways.\n\nThrough my research for my literature review, the idea has become something more achievable and more fine-grained. I will be reaching out to the escape room maintainer community to decide on a firm goal."
       },
       {
@@ -158,7 +158,7 @@
         "tags": [
           "foo"
         ],
-        "link": "https://github.com/boardfish/",
+        "link": "https://github.com/boardfish?utf8=✓&tab=repositories&q=topic%3Acom3110",
         "description": "For my assignment for the Text Processing module in final year, I was asked to build an information retrieval system that would combine techniques we'd learned about in the lectures. This involved several stages.\n\nFirst, the source data needed to be cleaned. Various techniques were applied to filter down the inputs, including stripping capitalisation and punctuation, and trimming words down to their stems so that similar words (e.g. politics and politician) could be found more easily under the same query.\n\nAfter this, I had to build inverse indexes for the inputs, which showed how many times each word occurred within each document. These could be used to represent the documents and query as vectors.\n\nBefore I could compare the vectors, I needed to use TF.IDF to refine the inputs. This would weight the vectors based on each word's frequency in the document versus its frequency in the collection, which would prioritise rarer terms.\n\nAfter this, I could finally apply a cosine similarity metric to compare the documents with the query."
       },
       {
@@ -174,7 +174,7 @@
         "tags": [
           "Haskell"
         ],
-        "link": "https://github.com/boardfish/",
+        "link": "https://github.com/boardfish?utf8=✓&tab=repositories&q=topic%3Acom2001",
         "description": "In this module, I was tasked with learning Haskell through a series of exercise. I found learning Haskell during this module exciting and engaging, and was particularly satisfied by the paradigm of pattern matching.\n\nMy final assignment was to create a framework for playing fives-and-threes dominoes via Haskell, maintaining a game state and allowing computer players to interact with the game. Some of these computer players were simplistic in nature, playing the first thing they could from their hand, but I also made one that was more intelligent and was able to guess the contents of the opponent's hand from their moves."
       },
       {
