@@ -107,6 +107,111 @@
     ]
   },
   {
+    "name": "University",
+    "icon": {
+      "prefix": "fas",
+      "iconName": "graduation-cap"
+    },
+    "projects": [
+      {
+        "name": "Computer Science Subject Ambassador",
+        "location": "University of Sheffield",
+        "icon": {
+          "prefix": "fas",
+          "iconName": "chalkboard-teacher"
+        },
+        "project_name": "School Visits",
+        "summary": "I am working in a local high school and sixth form to support and inspire computer science education as part of my degree.",
+        "date": null,
+        "tags": [
+          "Public Speaking"
+        ],
+        "link": "https://github.com/boardfish/",
+        "description": "I needed to interview to apply for this module. I understood that I would be representing the University in being deployed to a local school, and would support and deliver teaching there. This required a DBS check and workshops on safeguarding.\n\nSo far, it has entailed observation and work on a special project that I will deliver. Owing to Git's foundation as a widely applicable tool for collaboration and solo work alike, I intend to bring this to a class of Year 12 students as a skill.\n\nMy plan over the next nine weeks, as of writing this, will be to build rapport with classes I'm working with and go on to teach lessons on data structures. Eventually, I'll be able to apply my special project, which will allow the class to work against a CI server with Git."
+      },
+      {
+        "name": "Dissertation Project",
+        "location": "University of Sheffield",
+        "icon": {
+          "prefix": "fas",
+          "iconName": "lock-open"
+        },
+        "project_name": "Escape Room ???",
+        "summary": "I am building a tool to assist escape room owners in running their business.",
+        "date": null,
+        "tags": [
+          "foo"
+        ],
+        "link": "https://github.com/boardfish/",
+        "description": "For my dissertation, I initially seeked to integrate a distributed system with an escape room for various purposes. Escape rooms are inherently very physical experiences, but I believe that well-tested technology could enhance the experience in various ways.\n\nThrough my research for my literature review, the idea has become something more achievable and more fine-grained. I will be reaching out to the escape room maintainer community to decide on a firm goal."
+      },
+      {
+        "name": "Information Retrieval System",
+        "location": "University of Sheffield",
+        "icon": {
+          "prefix": "fas",
+          "iconName": "list-alt"
+        },
+        "project_name": "Text Processing",
+        "summary": "I developed an information retrieval that applied stoplists, TF.IDF and cosine similarity to find documents relevant to a given query.",
+        "date": null,
+        "tags": [
+          "foo"
+        ],
+        "link": "https://github.com/boardfish/",
+        "description": "For my assignment for the Text Processing module in final year, I was asked to build an information retrieval system that would combine techniques we'd learned about in the lectures. This involved several stages.\n\nFirst, the source data needed to be cleaned. Various techniques were applied to filter down the inputs, including stripping capitalisation and punctuation, and trimming words down to their stems so that similar words (e.g. politics and politician) could be found more easily under the same query.\n\nAfter this, I had to build inverse indexes for the inputs, which showed how many times each word occurred within each document. These could be used to represent the documents and query as vectors.\n\nBefore I could compare the vectors, I needed to use TF.IDF to refine the inputs. This would weight the vectors based on each word's frequency in the document versus its frequency in the collection, which would prioritise rarer terms.\n\nAfter this, I could finally apply a cosine similarity metric to compare the documents with the query."
+      },
+      {
+        "name": "Advanced Programming Topics",
+        "location": "University of Sheffield",
+        "icon": {
+          "prefix": "fas",
+          "iconName": "angle-double-right"
+        },
+        "project_name": "Doing Me a Haskell for Great Good",
+        "summary": "In this module, I learned to apply functional programming concepts to problems through Haskell.",
+        "date": null,
+        "tags": [
+          "Haskell"
+        ],
+        "link": "https://github.com/boardfish/",
+        "description": "In this module, I was tasked with learning Haskell through a series of exercise. I found learning Haskell during this module exciting and engaging, and was particularly satisfied by the paradigm of pattern matching.\n\nMy final assignment was to create a framework for playing fives-and-threes dominoes via Haskell, maintaining a game state and allowing computer players to interact with the game. Some of these computer players were simplistic in nature, playing the first thing they could from their hand, but I also made one that was more intelligent and was able to guess the contents of the opponent's hand from their moves."
+      },
+      {
+        "name": "OCR System",
+        "location": "University of Sheffield",
+        "icon": {
+          "prefix": "fas",
+          "iconName": ""
+        },
+        "project_name": null,
+        "summary": null,
+        "date": null,
+        "tags": [
+          "foo"
+        ],
+        "link": "https://github.com/boardfish/",
+        "description": ""
+      },
+      {
+        "name": "Bio-inspired",
+        "location": "University of Sheffield",
+        "icon": {
+          "prefix": "fas",
+          "iconName": "fire-alt"
+        },
+        "project_name": null,
+        "summary": null,
+        "date": null,
+        "tags": [
+          "foo"
+        ],
+        "link": "https://github.com/boardfish/",
+        "description": ""
+      }
+    ]
+  },
+  {
     "name": "Hackathons",
     "icon": {
       "prefix": "fas",
@@ -297,7 +402,13 @@
         "project_name": "Personal website",
         "summary": "I'm hosting this site with Netlify, but I've previously explored and hosted with Docker and Kubernetes.",
         "date": "April 2019-present",
-        "tags": ["Netlify", "JAM Stack", "Docker", "Linux", "Kubernetes"],
+        "tags": [
+          "Netlify",
+          "JAM Stack",
+          "Docker",
+          "Linux",
+          "Kubernetes"
+        ],
         "description": "In the past, I've chosen to invest time in my virtual private server. For almost two years, I relied on a variety of open-source alternatives to popular services, including Wekan over Trello and Keycloak over other OAuth options. I also experimented with using Kubernetes to do this, but ran into some issues. Docker became a domain I had much better knowledge of and control over. Though in principle I strongly believe in owning your platform, I'm now hosting with Netlify to save myself from firefighting over the course of the year."
       },
       {
@@ -311,7 +422,12 @@
         "project_name": "RightNow0verMe",
         "summary": "I built a bot to generate random verses for the song 'Come Together'.",
         "date": "December 2019",
-        "tags": ["Twitter", "Python", "Twython", "pronouncing"],
+        "tags": [
+          "Twitter",
+          "Python",
+          "Twython",
+          "pronouncing"
+        ],
         "description": "I developed [@RightNow0verMe](https://twitter.com/RightNow0verMe), a Twitter bot dedicated to coming up with random verses for the song 'Come Together'.\n\nIts output is admittedly a little untamed, being a random jumble of words that fits the meter of any line from a verse in the original song. However, it's always fun to see the odd phrase it spits out, and its chaotic nature is right in keeping with other bots that inspire it."
       }
     ]

@@ -40,7 +40,12 @@ import {
   faRobot,
   faFunnelDollar,
   faStar,
-  faFish
+  faFish,
+  faGraduationCap,
+  faChalkboardTeacher,
+  faLockOpen,
+  faListAlt,
+  faFireAlt
 } from "@fortawesome/free-solid-svg-icons";
 
 // FontAwesome icon library intialisation
@@ -49,17 +54,20 @@ library.add(
   faAngleDoubleRight,
   faBomb,
   faBootstrap,
+  faChalkboardTeacher,
   faClock,
   faCloud,
   faComments,
   faCompactDisc,
   faCreditCard,
   faExclamationCircle,
+  faFireAlt,
   faFish,
   faFunnelDollar,
   faGamepad,
   faGem,
   faGithub,
+  faGraduationCap,
   faEnvelope,
   faFacebook,
   faFemale,
@@ -68,6 +76,8 @@ library.add(
   faFunnelDollar,
   faHtml5,
   faLinkedin,
+  faListAlt,
+  faLockOpen,
   faMoon,
   faMobileAlt,
   faReact,
