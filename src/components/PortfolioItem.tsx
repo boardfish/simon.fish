@@ -29,7 +29,7 @@ import { IconLookup, findIconDefinition } from "@fortawesome/fontawesome-svg-cor
             <span dangerouslySetInnerHTML={{ __html: name }} />
             <br />
             <small className="text-muted">
-              {`${location}, ${date}`}
+              {`${location ? location : ""}${location && date ? " | " : ""}${date ? date : ""}`}
             </small>
           </h4>
           <div>
