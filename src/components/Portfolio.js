@@ -25,6 +25,16 @@ export default (selectedCardState, focusCardState) => {
       <TabContent className="col-9 px-0" activeTab={selectedCardState[0]} style={{overflowY: "scroll", minHeight: "inherit", maxHeight: "inherit"}}>
         <Card className="bg-dark" style={{minHeight: "inherit"}}>
           <CardBody className="d-flex flex-column justify-content-center">
+            <PortfolioItem
+                id={"emptyState"}
+                icon={{prefix: "fas", iconName: "fire-alt"}}
+                name="Portfolio"
+                location="Welcome to my portfolio. Select a project from the sidebar to open it."
+                active={selectedCardState[0] === 0}
+                tags={[]}
+                focused={true}
+                focusCard={focusCardState[1]}
+              />
             {Portfolio.map((group, groupIndex) => (
               group.projects.map((portfolioItem, index) => (
                 <PortfolioItem
