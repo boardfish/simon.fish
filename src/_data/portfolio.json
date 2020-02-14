@@ -25,8 +25,8 @@
           "Jenkins",
           "PowerShell"
         ],
-        "link": "https://ukcloud.com/",
-        "description": "For my Year in Industry, I worked at UKCloud. My development team and I produced an identity and access management API that allows UKCloud's OpenShift and OpenStack customers to manage permissions of others in their company. I'll be writing more about this here soon, but for now, please check out my [CV](https://cv.simon.fish)."
+        "link": "https://ukcloud.com/meet-simon/",
+        "description": "I spent a year in industry with UKCloud, a cloud hosting provider primarily for the public sector. I dealt with the company's software written in Ruby, such as the Portal and the internal CMDB, as part of a Scrum team. My biggest responsibility over the course of the year lay with IDAM, the Identity and Access Management API.\n\nIDAM is linked to UKCloud's SSO system, a Red Hat SSO instance that underwent construction at the same time. My team and I had a lot of influence surrounding the implementation of this, and I personally [gained a vast understanding of Red Hat SSO very quickly](#testimonials). The implementation of IDAM required a lot of communication between teams, from its initial deployment to the platform to educating customer support engineers on its purpose and functions.\n\nAdditionally, I supported the development of an internal compliance tool with other undergraduates, learned and developed personal projects in React, and worked with my team to develop other significant features.\n\nSome more specifics are documented on my [CV](https://cv.simon.fish), and my line manager Ben has left a [testimonial](#testimonials)."
       },
       {
         "name": "unPhone development",
@@ -79,7 +79,8 @@
         "date": "February 2018-May 2018",
         "tags": [
           "Java",
-          "LEGO Mindstorms"
+          "LEGO Mindstorms",
+          "Robotics Theory"
         ],
         "description": "One of my second-year modules tackled the topics of bio-inspired computing, robotics, and the crossover of the two. In the robotics half of the module, I was part of a group tasked with developing a way for a LEGO Mindstorms robot to guide itself around a walled maze. It used two ultrasonic sensors to judge its distance from nearby walls, and applied the concept of a closed-loop negative feedback system with a PID controller to attempt to guide itself around the maze using input data. Our implementation was up to the specification and worked prior to the official demo."
       },
@@ -122,11 +123,15 @@
         },
         "project_name": "School Visits",
         "summary": "I am working in a local high school and sixth form to support and inspire computer science education as part of my degree.",
-        "date": null,
+        "date": "September 2019-Present",
         "tags": [
-          "Public Speaking"
+          "Public Speaking",
+          "Teaching",
+          "Jenkins",
+          "Git",
+          "Gitea",
+          "Docker"
         ],
-        "link": "https://github.com/boardfish?utf8=✓&tab=repositories&q=topic%3Acom3550",
         "description": "I needed to interview to apply for this module. I understood that I would be representing the University in being deployed to a local school, and would support and deliver teaching there. This required a DBS check and workshops on safeguarding.\n\nSo far, it has entailed observation and work on a special project that I will deliver. Owing to Git's foundation as a widely applicable tool for collaboration and solo work alike, I intend to bring this to a class of Year 12 students as a skill.\n\nMy plan over the next nine weeks, as of writing this, will be to build rapport with classes I'm working with and go on to teach lessons on data structures. Eventually, I'll be able to apply my special project, which will allow the class to work against a CI server with Git."
       },
       {
@@ -138,9 +143,8 @@
         },
         "project_name": "Escape Room Tools",
         "summary": "I am building a tool to assist escape room owners in running their business.",
-        "date": null,
+        "date": "September 2019-Present",
         "tags": [],
-        "link": "https://github.com/boardfish?utf8=✓&tab=repositories&q=topic%3Acom3610",
         "description": "For my dissertation, I initially seeked to integrate a distributed system with an escape room for various purposes. Escape rooms are inherently very physical experiences, but I believe that well-tested technology could enhance the experience in various ways.\n\nThrough my research for my literature review, the idea has become something more achievable and more fine-grained. I will be reaching out to the escape room maintainer community to decide on a firm goal."
       },
       {
@@ -152,9 +156,11 @@
         },
         "project_name": "Text Processing",
         "summary": "I developed an information retrieval that applied stoplists, TF.IDF and cosine similarity to find documents relevant to a given query.",
-        "date": null,
-        "tags": [],
-        "link": "https://github.com/boardfish?utf8=✓&tab=repositories&q=topic%3Acom3110",
+        "date": "September 2019-January 2020",
+        "tags": [
+          "Python",
+          "Information Retrieval"
+        ],
         "description": "For my assignment for the Text Processing module in final year, I was asked to build an information retrieval system that would combine techniques we'd learned about in the lectures. This involved several stages.\n\nFirst, the source data needed to be cleaned. Various techniques were applied to filter down the inputs, including stripping capitalisation and punctuation, and trimming words down to their stems so that similar words (e.g. politics and politician) could be found more easily under the same query.\n\nAfter this, I had to build inverse indexes for the inputs, which showed how many times each word occurred within each document. These could be used to represent the documents and query as vectors.\n\nBefore I could compare the vectors, I needed to use TF.IDF to refine the inputs. This would weight the vectors based on each word's frequency in the document versus its frequency in the collection, which would prioritise rarer terms. I could then finally apply a cosine similarity metric to compare the documents with the query."
       },
       {
@@ -166,12 +172,13 @@
         },
         "project_name": "Doing Me a Haskell for Great Good",
         "summary": "In this module, I learned to apply functional programming concepts to problems through Haskell.",
-        "date": null,
+        "date": "September 2017-March 2018",
         "tags": [
-          "Haskell"
+          "Haskell",
+          "AI"
         ],
         "link": "https://github.com/boardfish?utf8=✓&tab=repositories&q=topic%3Acom2001",
-        "description": "In this module, I was tasked with learning Haskell through a series of exercise. I found learning Haskell during this module exciting and engaging, and was particularly satisfied by the paradigm of pattern matching.\n\nMy final assignment was to create a framework for playing fives-and-threes dominoes via Haskell, maintaining a game state and allowing computer players to interact with the game. Some of these computer players were simplistic in nature, playing the first thing they could from their hand, but I also made one that was more intelligent and was able to guess the contents of the opponent's hand from their moves."
+        "description": "In this module, I was tasked with learning Haskell through a series of exercises. I found learning Haskell during this module exciting and engaging, and was particularly satisfied by the paradigm of pattern matching.\n\nMy final assignment was to create a framework for playing fives-and-threes dominoes via Haskell, maintaining a game state and allowing computer players to interact with the game. Some of these computer players were simplistic in nature, playing the first thing they could from their hand, but I also made one that was more intelligent and was able to guess the contents of the opponent's hand from their moves."
       }
     ]
   },
