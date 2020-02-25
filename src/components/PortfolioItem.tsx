@@ -7,7 +7,6 @@ import { IconLookup, findIconDefinition } from "@fortawesome/fontawesome-svg-cor
   const imageDiv = (image: string, altText: string) => {
     if (!image) { return }
     return (
-      // <div className={this.props.active ? "col" : "col-12"}>
       <img
         width="100%"
         style={{ objectFit: "cover" }}
@@ -15,7 +14,6 @@ import { IconLookup, findIconDefinition } from "@fortawesome/fontawesome-svg-cor
         alt={altText}
         className="pb-3"
       />
-      // </div>
     );
   };
 

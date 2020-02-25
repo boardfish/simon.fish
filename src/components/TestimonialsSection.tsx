@@ -2,16 +2,10 @@ import React from "react";
 import Testimonial from "./Testimonial";
 import Testimonials from "../_data/testimonials";
 
-export default () => {
-  return (
-    <div>
-      <div
-        className="d-flex flex-column"
-      >
-        {Testimonials.map(testimonial => {
-          return <Testimonial {...testimonial} />;
-        })}
-      </div>
-    </div>
-  );
-};
+export default () => (
+  <div className="d-flex flex-column">
+    {Testimonials.map(testimonial => {
+      return <Testimonial {...testimonial} />;
+    })}
+  </div>
+);
